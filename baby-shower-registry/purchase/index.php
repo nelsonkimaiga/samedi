@@ -1,0 +1,192 @@
+<?php
+session_start();
+
+$_SESSION['page']['home_url'] = '../../../';
+define('local_url','../../../');
+
+
+include('../bin/class.invitation.php');
+include('../../bin/shop.purchase.php');
+if(isset($_REQUEST['regid']) && isset($_REQUEST['itemCode'])){
+	$invitation = new InvitationRegistry_Module($_REQUEST['regid']);
+	$invitation->getDetails();
+	
+	//get product information:
+	$productInfo = new SHOPPurchase_Mod();
+	$arrProducts = $productInfo->getProductDetails($_REQUEST['itemCode']);
+	
+	$activeItem = count($_SESSION['arrItems']);
+	
+	$quantity = $productInfo->processQuantity($_SESSION['arrItems']);
+	
+}
+
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Samedi: Registry</title>
+<?php
+include(local_url.'templates/script-tags.php');
+?>
+<script type="text/javascript" src="<?=local_url?>/js/product.js.js"></script>
+<script type="text/javascript" src="<?=local_url?>/js/registry.03.js"></script>
+</head>
+
+<body>
+<?php
+	include(local_url.'templates/top-nav.dev.php');
+?>
+<!--End top nav-->
+<div class="body-content account-page row-fluid">
+	<div class="span12 lowerContent">
+		<div class="row-fluid">
+			<div class="span12 row-fluid" style="height:50px; background:url('../../../img/cloud-background.jpg')">
+				&nbsp;
+			</div>
+		  </div><br />
+	</div><!--lowerContent-->
+	
+	<div class="innnerBodyContent" style="">
+		<div class="span1" style="width:auto">&nbsp;</div>
+		<div class="span11 row-fluid item-shop-container" style="margin-left:0.5%">
+			<div class="span1 row-fluid">
+				
+			</div>
+			
+			<div class="span11 row-fluid item-shop-main" style="padding-top:10px; padding-left:10px;">
+				
+				<div class="span10 row-fluid" style="height:100px; width:100%; border:solid thin #000000; margin-left:0; padding:10px; background:url('../../../img/couple-banner.jpg'); background-size:cover">
+					<div class="span12 row-fluid">
+						<div class="span1">&nbsp;</div>
+						<div class="span3" style="font-size:40px; font-weight:bold; font-family: 'Playball', cursive; padding-top:20px; text-align:right">
+							<?php echo($invitation->brideInfo); ?>
+						</div>
+						<div class="span1"><img src="<?=$_SESSION['page']['home_url']?>img/and-medium.png" style="opacity:0.6" /></div>
+						<div class="span3" style="font-size:40px; font-weight:bold; font-family: 'Tangerine', cursive; padding-top:20px">
+							<?php echo($invitation->groomInfo); ?>
+						</div>
+					 </div>
+					<div style="font-size:20px; color:#FF3E3E; font-weight:bold">
+						Your perfect gift, for this perfect couple
+					</div>
+				</div>
+				
+				
+				<div class="span10 row-fluid refine-container" style="height:80px; width:100%; margin-top:20px; margin-left:0; border-bottom:solid thick #999999; padding-top:20px">
+					<h4>You wish to purchase this item.</h4><br /><br />
+					
+					<!--item display -->
+					<div class="row-fluid item-div-container container-white" style="padding:5px">
+						<div class="span5">
+							<img class="" src="<?=$_SESSION['page']['home_url']?>img/<?=$arrProducts['image']?>" /><br /><br />
+						</div>
+						<div class="span6 row-fluid">						
+							<div class="span12 item-abstract" style="font-size:16px">
+								<a href="<?=local_url.'shop/'.$arrProducts['url']?>"><?php echo($arrProducts['abstract']); ?></a>
+							</div>
+							<div class="span12 item-quantity row-fluid" style="font-size:20px; font-weight:bold">
+								<div class="span3">Price</div>
+								<div class="span7">
+									<sup>Ksh.</sup><span class="item-price-itemCode price-per"><?php echo($arrProducts['price']); ?></span><sup>00</sup>&nbsp;
+									<span style="font-size:14px; color:#666666;">(From Ksh. <?php echo($arrProducts['org_price']); ?>)</span>
+								</div>
+							</div>
+							<div class="span12 item-quantity row-fluid" style="font-size:16px; font-weight:bold">
+								<div class="span3">Quantity</div>
+								<div class="span5">
+									<select class="span5" onchange="javascript:product.processPriceAtCheckOut(this.value)">
+									<?php
+										for($i=1; $i<=$quantity; $i++){
+											echo('<option>'.$i.'</option>');
+										 }
+									?>
+									</select>
+								</div>
+							</div>
+							<div class="span12 item-quantity row-fluid" style="font-size:20px; font-weight:bold">
+								<div class="span3">=</div>
+								<div class="span5">
+									<sup>Ksh.</sup>&nbsp;<span class="item-price-itemCode total-price">23,400</span>&nbsp;<sup>00</sup>&nbsp;
+								</div>
+							</div>
+							<div class="span12 row-fluid" style="font-size:20px; font-weight:bold">
+								<div class="span3">&nbsp;</div>
+								<div class="span8">
+									<label>
+										<input type="checkbox" name="giftCard"/>&nbsp;Include Gift Card and Gift Wrapping
+									</label>
+								</div>
+							</div>
+							<div class="span12 row-fluid" style="font-size:14; border-top:solid 2px #CCCCCC">
+								<div class="span3"><strong>Delivery</strong></div>
+								<div class="span8 row-fluid" style="margin-top:2%">
+									<label class="span11">
+										<input type="radio" name="deliveryOptions" value="1" checked="checked"/>&nbsp;Deliver to my location
+									</label>
+									<label class="span11" style="margin-left:0">
+										<input type="radio" name="deliveryOptions" value="2" />&nbsp;Delivery to couple's location
+									</label>
+									<label class="span11" style="margin-left:0">
+										<input type="radio" name="deliveryOptions" value="3" />&nbsp;Pick-up from nearest store (<a href="">View nearest store</a>)
+									</label>
+								</div>
+							</div>
+							<div class="span11 item-buttons">
+								<div><button class="btn btn-warning">Proceed to Checkout</button></div>
+							</div>
+						</div>
+					</div>
+					<!--end item display -->
+					
+					
+				</div><!--refine-container-->
+				
+			</div><!--item-shop-main-->
+
+		</div><!--item-shop-container-->
+	</div>
+</div><br /><!--end bodycontent-->
+<?php
+		echo('<div style="margin-top:25%;">&nbsp;</div>');
+	include($_SESSION['page']['home_url']."templates/footer-nav.php");
+?>
+<div class="modal hide fade" id="reviewModal">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3 id="modalImage"></h3>
+      </div>
+      <div class="modal-body">
+	  <?php
+	  
+	  if(isset($_SESSION['account']['refUserId'])){
+	  ?>
+        <p>
+			Thank You for your vote. Please write us a review<br /><br />
+			<textarea id="review" rows="4" placeholder="Write your review ..." class="span4"></textarea>
+		</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn" data-dismiss="modal">Cancel</a>
+        <a href="javascript:product.postReview()" class="btn btn-primary">Save Review</a>
+      </div>
+	  <?php
+	  }else{	  
+	  ?>
+	    <p>
+			<div class="alert alert-warning">
+				You must be signed in to submit a vote and a review.
+			</div>
+		</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn" data-dismiss="modal">Close</a>
+      </div>
+	  <?php
+	  }
+	  ?>
+    </div>
+</body>
+</html>
+    

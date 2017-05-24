@@ -1,0 +1,5 @@
+[10-Aug-2016 13:45:13 UTC] PHP Notice:  Undefined index: account in /home/samedico/public_html/account/bin/left-navbar.php on line 3
+[10-Aug-2016 13:50:12 UTC] PHP Notice:  Undefined index: account in /home/samedico/public_html/account/bin/left-navbar.php on line 3
+[11-Aug-2016 10:03:09 UTC] PHP Notice:  Undefined index: account in /home/samedico/public_html/account/bin/left-navbar.php on line 3
+[25-Aug-2016 07:32:23 UTC] PHP Notice:  Undefined index: account in /home/samedico/public_html/account/bin/left-navbar.php on line 3
+[06-Dec-2016 06:52:01 UTC] PHP Notice:  Undefined index: refUserId in /home/samedico/public_html/account/bin/left-navbar.php on line 3

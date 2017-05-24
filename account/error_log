@@ -1,0 +1,4 @@
+[25-Dec-2016 11:18:00 UTC] PHP Notice:  Undefined index: refUserId in /home/samedico/public_html/account/bin/left-navbar.php on line 3
+[25-Dec-2016 11:18:00 UTC] PHP Notice:  Undefined index: refName in /home/samedico/public_html/account/index.php on line 53
+[25-Dec-2016 12:59:55 UTC] PHP Notice:  Undefined index: refUserId in /home/samedico/public_html/account/bin/left-navbar.php on line 3
+[25-Dec-2016 12:59:56 UTC] PHP Notice:  Undefined index: refName in /home/samedico/public_html/account/index.php on line 53

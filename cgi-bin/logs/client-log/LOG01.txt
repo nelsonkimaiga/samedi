@@ -1,0 +1,5 @@
+deleteRegistry.php, Time: ,SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SEECT entryId FROM wedding_registry_sam_9_2017 WHERE entryId=2 LIMIT 1' at line 1; 
+File:class.admin.001.php, Time: ,SQLSTATE[HY000] [1049] Unknown database 'samedico_graduation_registry'; 
+File:class.admin.001.php, Time: ,SQLSTATE[HY000] [1049] Unknown database 'samedico_graduation_registry'; 
+File:class.admin.001.php, Time: ,SQLSTATE[HY000] [1049] Unknown database 'samedico_graduation_registry'; 
+File:class.admin.001.php, Time: ,SQLSTATE[HY000] [1049] Unknown database 'samedico_graduation_registry'; 

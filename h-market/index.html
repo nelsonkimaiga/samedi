@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment6.1</title>
+</head>
+<body>
+
+<div style="text-align: center;">
+    <p id="myclass" style="border:solid thin #666666; position:relative;">
+        My name is Tyson. I am a Male. I am 26 years old. I like to play football. Apple is my favorite fruit. I like to read, I like to write. I like to think. I like to dream. I like to listen music. My hobby is music listening.
+    </p>
+</div>
+<script>
+   var x = document.getElementById("myclass").innerHTML;
+   var y = addNewlines(x.trim());
+   document.getElementById("myclass").innerHTML = y;
+   
+   var elem = document.createElement("img");
+   elem.src = 'self_image.jpeg';
+   elem.setAttribute("height", "100");
+   elem.setAttribute("width", "200");
+   elem.setAttribute("id", "myImage");
+   document.getElementById("myclass").appendChild(elem);
+      
+   document.getElementById("myImage").style.position = "absolute";
+   document.getElementById("myImage").style.zIndex = "100";
+   document.getElementById("myImage").style.top = "30%";
+   document.getElementById("myImage").style.left = "43%";
+   
+   function addNewlines(str) {
+        var result = '';
+        while (str.length > 0) {
+            result += str.substring(0, 20) + '<br />';
+          	str = str.substring(20); //take out caharacters
+        }
+        return result;
+    }
+</script>
+</body>
+</html>

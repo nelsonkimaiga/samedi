@@ -1,0 +1,18 @@
+[06-Jun-2016 18:28:26 Africa/Nairobi] PHP Notice:  Undefined index: refUserId in /home/samedico/public_html/account/login/user.auth.login.php on line 25
+[16-Jun-2016 13:45:15 Africa/Nairobi] PHP Notice:  Undefined index: account in /home/samedico/public_html/account/login/user.auth.login.php on line 25
+[02-Aug-2016 13:24:01 Africa/Nairobi] PHP Notice:  Undefined index: refUserId in /home/samedico/public_html/account/login/user.auth.login.php on line 25
+[10-Aug-2016 15:26:11 Africa/Nairobi] PHP Notice:  Undefined index: account in /home/samedico/public_html/account/login/user.auth.login.php on line 25
+[15-Aug-2016 16:10:11 Africa/Nairobi] PHP Notice:  Undefined index: refUserId in /home/samedico/public_html/account/login/user.auth.login.php on line 25
+[19-Aug-2016 12:13:04 Africa/Nairobi] PHP Notice:  Undefined index: refUserId in /home/samedico/public_html/account/login/user.auth.login.php on line 25
+[06-Dec-2016 09:47:38 Africa/Nairobi] PHP Notice:  Undefined index: account in /home/samedico/public_html/account/login/user.auth.login.php on line 25
+[06-Dec-2016 09:53:02 Africa/Nairobi] PHP Notice:  Undefined index: refUserId in /home/samedico/public_html/account/login/user.auth.login.php on line 25
+[19-Jan-2017 00:52:23 Africa/Nairobi] PHP Notice:  Undefined index: account in /home/samedico/public_html/account/login/user.auth.login.php on line 25
+[19-Jan-2017 14:17:31 Africa/Nairobi] PHP Notice:  Undefined index: refUserId in /home/samedico/public_html/account/login/user.auth.login.php on line 25
+[19-Jan-2017 11:21:17 UTC] PHP Notice:  Undefined index: refUserId in /home/samedico/public_html/templates/top-nav.dev.php on line 8
+[19-Jan-2017 11:21:17 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/samedico/public_html/account/bin/class.load.user.data.php on line 57
+[19-Jan-2017 11:21:17 UTC] PHP Notice:  Undefined index: refUserId in /home/samedico/public_html/templates/top-nav.dev.php on line 8
+[19-Jan-2017 11:21:17 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/samedico/public_html/account/bin/class.load.user.data.php on line 57
+[19-Jan-2017 11:21:17 UTC] PHP Notice:  Undefined index: refUserId in /home/samedico/public_html/templates/top-nav.dev.php on line 8
+[19-Jan-2017 11:21:17 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/samedico/public_html/account/bin/class.load.user.data.php on line 57
+[19-Jan-2017 11:21:17 UTC] PHP Notice:  Undefined index: refUserId in /home/samedico/public_html/templates/top-nav.dev.php on line 8
+[19-Jan-2017 11:21:17 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/samedico/public_html/account/bin/class.load.user.data.php on line 57
