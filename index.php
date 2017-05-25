@@ -42,7 +42,6 @@ $_SESSION['page']['home_url'] = '';
 
         </script>
     </head>
-
     <body>
         <?php
         include($_SESSION['page']['home_url'] . 'templates/top-nav.dev.php');
@@ -53,22 +52,22 @@ $_SESSION['page']['home_url'] = '';
         </div>
 
         <!--body content-->
-        <div class="row-fluid inline-links container" style="margin-top:20px">
-            <div class="row-fluid extra-links-images" style="cursor:default; background:#F5F5F5">
-                <div class="span2" style="width:7.5%">&nbsp;</div>
-                <div class="span2">
+        <div class="row inline-links container" style="margin-top:20px">
+            <div class="row extra-links-images" style="cursor:default; background:#F5F5F5">
+                <div class="large-2 columns" style="width:7.5%">&nbsp;</div>
+                <div class="large-2 columns">
                     <img src="img/icons/seo-60-64.png"/><br />
                     Website Pages
                 </div>
-                <div class="span2">
+                <div class="large-2 columns">
                     <img src="img/icons/user_group-64.png"  /><br />
                     Guest Management
                 </div>
-                <div class="span2">
+                <div class="large-2 columns">
                     <img src="img/icons/8-64.png"  /><br />
                     Gifts List
                 </div>
-                <div class="span2">
+                <div class="large-2 columns">
                     <img src="img/icons/wedding_42-64.png"  /><br />
                     Registry Services
                 </div>
@@ -79,36 +78,40 @@ $_SESSION['page']['home_url'] = '';
 
         </div><!--inline-links-->
 
-        <div class="row-fluid exline-links" id="exline-links" style="margin-top:50px;">
-            <div class="span12 in-content-h1" style="text-align:center">
-                Create a registry of your choice. The only Gift Registry Provider in Kenya
-            </div><br /><br />
-            <div class="span4" id="banner-one">
-                <div class="row-fluid">
-                    <div class="span12"><img src="img/wedding-registry.jpg"/></div><br />
-                    <div class="span11"  id="banner_one-heading">Create your Wedding Registry</div><br />
-                    <div class="span11" id="banner-wedding-phone-description" style="font-size:16px; line-height:1.4"><br>
-                        Its your big day! Make it that special. Create your registry today, customize it to what you prefer, select your gift list, add a gallery and invite family and friends and let them know how excited you are!.
+        <div class="row exline-links" id="exline-links" style="margin-top:50px;">
+            <div class="large-12 columns in-content-h1" style="text-align:center">
+                <h4>Create a registry of your choice. The only Gift Registry Provider in Kenya</h4>
+            </div>
+            <br>
+            <div class="large-4 columns" id="banner-one">
+                <div class="row">
+                    <div class="large-12 columns"><img src="img/wedding-registry.jpg"></div>
+                    <div class="large-12 columns"  id="banner_one-heading">Create your Wedding Registry</div><br />
+                    <div class="large-12 columns" id="banner-wedding-phone-description" style="font-size:16px; line-height:1.4">
+                        <hr>
+                        <p style="text-align: justify;">Its your big day! Make it that special. Create your registry today, customize it to what you prefer, select your gift list, add a gallery and invite family and friends and let them know how excited you are!.</p>
                     </div>
                 </div>
                 <a href="wedding-registry/"><div class="button-link" id="banner_one-button-link">Learn more&nbsp;<i class="icon-chevron-right" style="margin-top:2px"></i></div></a>
             </div>
-            <div class="span3" id="banner-two">
-                <div class="row-fluid">
-                    <div class="span12"><img src="img/shower.jpg"/></div><br />
-                    <div class="span11" id="banner_two-heading">Create your Baby Shower Registry</div><br />
-                    <div class="span11" id="banner-baby-phone-description" style="font-size:16px; line-height:1.4"><br>
-                        Congratulations! After looking forward to it, your family is now bigger. Let's help you celebrate. Create a baby shower registry and select your themes, add a gift list, make it memorable.
+            <div class="large-4 columns" id="banner-two">
+                <div class="row">
+                    <div class="large-12 columns"><img src="img/shower.jpg"></div>
+                    <div class="large-12 columns" id="banner_two-heading">Create your Baby Shower Registry</div><br />
+                    <div class="large-12 columns" id="banner-baby-phone-description" style="font-size:16px; line-height:1.4">
+                        <hr>
+                        <p style="text-align: justify;">Congratulations! After looking forward to it, your family is now bigger. Let's help you celebrate. Create a baby shower registry and select your themes, add a gift list, make it memorable.</p>
                     </div>
                 </div>
                 <a href="baby-shower-registry/"><div class="button-link" id="banner_two-button-link">Learn more&nbsp;<i class="icon-chevron-right" style="margin-top:2px"></i></div></a>
             </div>
-            <div class="span4" id="banner-two">
-                <div class="row-fluid">
-                    <div class="span12"><img src="img/graduation_registry.jpg"/></div><br />
-                    <div class="span11" id="banner_two-heading">Create your Graduation Registry</div><br />
-                    <div class="span11" id="banner-baby-phone-description" style="font-size:16px; line-height:1.4"><br>
-                        Congratulations for studying hard and excelling. Create a registry to help invite your family and friends. Create and post to your gallery to show your excitement and select and create a gift list. You deserve it!
+            <div class="large-4 columns" id="banner-two">
+                <div class="row">
+                    <div class="large-12 columns"><img src="img/graduation_registry.jpg"/></div>
+                    <div class="large-12 columns" id="banner_two-heading">Create your Graduation Registry</div><br />
+                    <div class="large-12 columns" id="banner-baby-phone-description" style="font-size:16px; line-height:1.4"><br>
+                        <hr>
+                        <p style="text-align: justify;">Congratulations for studying hard and excelling. Create a registry to help invite your family and friends. Create and post to your gallery to show your excitement and select and create a gift list. You deserve it!</p>
                     </div>
                 </div>
                 <a href="graduation-registry/"><div class="button-link" id="banner_two-button-link">Learn more&nbsp;<i class="icon-chevron-right" style="margin-top:2px"></i></div></a>
@@ -118,31 +121,34 @@ $_SESSION['page']['home_url'] = '';
 
     </div><!--exline-links-->
 
-    <div class="row-fluid down-links visible-desktop" style="margin-top:12%;">
-        <div class="span10 in-content-h1" style="text-align:center">
-            Control the look, Customize and Share the information
-        </div><br />
-        <div class="span1" style="margin-left:0">&nbsp;</div>
-        <div class="span4 row-fluid" id="banner-one">
-            <div class="span5 heading">Create</div>
-            <div class="span7 banner-image">
-                Create your preferred registry and include all the information you want according to how you want it to be. Be it your Wedding, Baby shower or Graduation. Lets help you see what you are looking forward to.
+    <div class="row down-links visible-desktop" style="margin-top:">
+        
+        <div class="large-10 columns in-content-h1" style="text-align:center">
+            <h3>Control the look, Customize and Share the information</h3>
+        </div>
+        <br>
+        <div class="large-1 columns" style="margin-left:0">&nbsp;</div>
+        
+        <div class="large-4 columns" id="banner-one">
+            <div class="large-5 columns heading">Create</div>
+            <div class="large-12 columns banner-image">
+                <p style="text-align: justify;">Create your preferred registry and include all the information you want according to how you want it to be. Be it your Wedding, Baby shower or Graduation. Lets help you see what you are looking forward to.</p>
             </div>
         </div>
 
 
-        <div class="span4 row-fluid" style="" id="banner-two">
-            <div class="span5 heading">Customize</div>
-            <div class="span7 banner-image">
-                Choose your favorite theme from a list of more than 30 and customize to your liking. Create a photo gallery and upload unlimited photos. Let us give you control for the big day.
+        <div class="large-4 columns" style="" id="banner-two">
+            <div class="large-5 columns heading">Customize</div>
+            <div class="large-7 columns banner-image">
+                <p style="text-align: justify;">Choose your favorite theme from a list of more than 30 and customize to your liking. Create a photo gallery and upload unlimited photos. Let us give you control for the big day.</p>
             </div>
         </div>
 
 
-        <div class="span4 row-fluid" id="banner-three">
-            <div class="span5 heading">Share</div>
-            <div class="span7 banner-image">
-                Invite your family, friends and colleagues from your web-page. Update them on what you are up to as you prepare to give them the show of their lives. You control the information, we don't.
+        <div class="large-4 columns" id="banner-three">
+            <div class="large-5 columns heading">Share</div>
+            <div class="large-7 columns banner-image">
+                <p style="text-align: justify;">Invite your family, friends and colleagues from your web-page. Update them on what you are up to as you prepare to give them the show of their lives. You control the information, we don't.</p>
             </div>
         </div>
 
