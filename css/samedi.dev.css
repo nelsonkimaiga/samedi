@@ -2,6 +2,17 @@ html, body{
     font-family: 'Raleway', serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    text-transform: capitalize;
+    font-family: 'Raleway', serif;
+}
+
 body a:hover{text-decoration:none}
 
 .topnav{background:rgba(0,125,221,0.6)}
@@ -27,7 +38,7 @@ body a:hover{text-decoration:none}
 
 .item-price{font-size:20px; color:#0033FF; font-weight:bold}
 .item-description{font-size:17px; padding-left:3px}
-.item-display{font-family:Calibri;}
+.item-display{font-family:'Raleway', serif;}
 
 .item-heading{font-size:24px; font-weight:bold; font-family: 'Raleway', serif; line-height:1.4}
 .item-heading-sub{font-size:14px; font-weight:normal}

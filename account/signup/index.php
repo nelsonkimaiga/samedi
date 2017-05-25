@@ -12,11 +12,11 @@ if (isset($_SESSION['account']['refName']) && isset($_SESSION['account']['refUse
 $_SESSION['page']['home_url'] = '../../';
 ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html class="no-js" lang="en" dir="ltr">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
         <title>Samedi: Sign Up</title>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet">
             <!--fonts-->
             <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
                 <!--font-awesome-->

@@ -7,10 +7,10 @@
 			&nbsp;
 		</div>
 		<div class="span4">
-			<form class="form-horizontal">
+			<form>
 				<div class="h5-inline">Get our weekly newsletter</div><br />
-				<div class="">
-					<input type="text" name="email-user-notifications" placeholder="Enter Email Address" />
+				<div class="form-group">
+					<input type="email" name="email-user-notifications" placeholder="Enter Email Address">
 					<button type="button" class="btn btn-warning">Sign Up</button>
 				</div>
 			</form>
