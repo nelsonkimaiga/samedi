@@ -46,7 +46,7 @@ $_SESSION['page']['home_url'] = '';
         <?php
         include($_SESSION['page']['home_url'] . 'templates/top-nav.dev.php');
         ?>
-        <div id="slider" style="z-index:0; position:relative">
+        <div id="slider" class="container" style="z-index:0; position:relative">
             <img src="<?= $_SESSION['page']['home_url'] ?>img/wedding-gift-banner.jpg" alt="" />
             <img src="<?= $_SESSION['page']['home_url'] ?>img/girl-at-shopping-online.png" alt="Create a gifts list of what you would like to receive" />
         </div>
@@ -122,13 +122,13 @@ $_SESSION['page']['home_url'] = '';
     </div><!--exline-links-->
 
     <div class="row down-links visible-desktop" style="margin-top:">
-        
+
         <div class="large-10 columns in-content-h1" style="text-align:center">
             <h3>Control the look, Customize and Share the information</h3>
         </div>
         <br>
         <div class="large-1 columns" style="margin-left:0">&nbsp;</div>
-        
+
         <div class="large-4 columns" id="banner-one">
             <div class="large-5 columns heading">Create</div>
             <div class="large-12 columns banner-image">
@@ -154,19 +154,19 @@ $_SESSION['page']['home_url'] = '';
 
     </div>
 
-<?php
-echo('<br /><br /><br />'); //manual top margin
-include($_SESSION['page']['home_url'] . "templates/footer-nav.php");
-?>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-<script src="dev/Foundation/js/smooth-scroll.js"></script>
-<script src="dev/Foundation/js/vendor/jquery.js"></script>
-<script src="dev/Foundation/js/vendor/what-input.js"></script>
-<script src="dev/Foundation/js/vendor/foundation.min.js"></script>
-<script src="dev/Foundation/js/app.js"></script>
-<script>
+    <?php
+    echo('<br /><br /><br />'); //manual top margin
+    include($_SESSION['page']['home_url'] . "templates/footer-nav.php");
+    ?>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="dev/Foundation/js/smooth-scroll.js"></script>
+    <script src="dev/Foundation/js/vendor/jquery.js"></script>
+    <script src="dev/Foundation/js/vendor/what-input.js"></script>
+    <script src="dev/Foundation/js/vendor/foundation.min.js"></script>
+    <script src="dev/Foundation/js/app.js"></script>
+    <script>
             smoothScroll.init();
-</script>
+    </script>
 
 </body>
 </html>

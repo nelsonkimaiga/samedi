@@ -11,7 +11,7 @@
                 <div class="h5-inline">Get our weekly newsletter</div><br />
                 <div class="form-group">
                     <input type="email" name="email-user-notifications" placeholder="Enter Email Address">
-                    <button type="button" class="button success">Sign Up</button>
+                    <button type="button" class="button expanded" style="background-color: #faa732;">Sign Up</button>
                 </div>
             </form>
         </div>
@@ -50,11 +50,13 @@
         </div>
     </div>
 
-    <div class="large-5 columns row footer-container-end" style="margin-left:0;">
-        <div class="span1" style="width:1%">
+    <div class="row footer-container-end" style="margin-left:0;">
+        <div class="large-5 columns">
+        <div class="large-1 columns" style="width:1%">
             &nbsp;
         </div>
         &copy;&nbsp;&nbsp;Samedi Registry Co.&nbsp;
         <?php echo(date('Y')); ?>
+    </div>
     </div>
 </div>
