@@ -43,9 +43,11 @@ $_SESSION['page']['home_url'] = '';
         </script>
     </head>
     <body>
-        <?php
-        include($_SESSION['page']['home_url'] . 'templates/top-nav.dev.php');
-        ?>
+        <div class="container">
+            <?php
+            include($_SESSION['page']['home_url'] . 'templates/top-nav.dev.php');
+            ?>
+        </div>
         <div id="slider" class="container" style="z-index:0; position:relative">
             <img src="<?= $_SESSION['page']['home_url'] ?>img/wedding-gift-banner.jpg" alt="" />
             <img src="<?= $_SESSION['page']['home_url'] ?>img/girl-at-shopping-online.png" alt="Create a gifts list of what you would like to receive" />
@@ -72,9 +74,6 @@ $_SESSION['page']['home_url'] = '';
                     Registry Services
                 </div>
             </div>
-
-            <!------------------>
-
 
         </div><!--inline-links-->
 

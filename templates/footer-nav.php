@@ -9,10 +9,10 @@
         <div class="large-4 columns">
             <form>
                 <div class="h5-inline">Get our weekly newsletter</div><br />
-                <div class="form-group">
+                <fieldset>
                     <input type="email" name="email-user-notifications" placeholder="Enter Email Address">
                     <button type="button" class="button expanded" style="background-color: #faa732;">Sign Up</button>
-                </div>
+                </fieldset>
             </form>
         </div>
         <div class="large-4 columns">
@@ -52,11 +52,11 @@
 
     <div class="row footer-container-end" style="margin-left:0;">
         <div class="large-5 columns">
-        <div class="large-1 columns" style="width:1%">
-            &nbsp;
+            <div class="large-1 columns" style="width:1%">
+                &nbsp;
+            </div>
+            &copy;&nbsp;&nbsp;Samedi Registry Co.&nbsp;
+            <?php echo(date('Y')); ?>
         </div>
-        &copy;&nbsp;&nbsp;Samedi Registry Co.&nbsp;
-        <?php echo(date('Y')); ?>
-    </div>
     </div>
 </div>

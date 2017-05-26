@@ -11,7 +11,8 @@ unset($_SESSION['account']['refName'], $_SESSION['account']['refEmail'], $_SESSI
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
         <title>Samedi: Sign In</title>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+        <!--foundation zurb-->
+        <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation.css' type="text/css">
         <!--fonts-->
         <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
         <!--font-awesome-->
@@ -27,11 +28,12 @@ unset($_SESSION['account']['refName'], $_SESSION['account']['refEmail'], $_SESSI
         include($_SESSION['page']['home_url'] . 'templates/top-nav.dev.php');
         ?>
         <!--End top nav-->
-        <div class="body-content signup row-fluid" style="margin-top:100px">
-            <div class="span3">&nbsp;</div>
-            <div class="span7">
-                <div class="form-heading span8" align="center">Log In To Your Account</div><br />
-                <form class="form-horizontal form-login-submit" action="user.auth.login.php" method="post">
+        <div class="body-content signup row" style="margin-top:100px">
+            <div class="large-3 columns">&nbsp;</div>
+            <div class="large-7 columns">
+                <div class="form-heading large-8 columns" align="center">Log In To Your Account</div>
+                <br>
+                <form class="form-login-submit" action="user.auth.login.php" method="post" autocomplete="off">
                     <div class="control-group alert-login-container" align="center">
                         <?php
                         if (isset($_SESSION['err']['login']) && $_SESSION['err']['login'] != "") {
@@ -40,52 +42,28 @@ unset($_SESSION['account']['refName'], $_SESSION['account']['refEmail'], $_SESSI
                         }
                         ?>
                     </div>
-                    <div class="control-group">
-                        <div class="controls">
-                            EMAIL ADDRESS
+                    <fieldset>
+                        <label>Email Address</label>
+                        <input type="email" id="inputEmail" name="inputEmail" placeholder="susanna@email.com">
+                    </fieldset>
+                    <fieldset>
+                        <label>Password</label>
+                        <input type="password" id="inputPassword" name="inputPassword" placeholder="password">
+                    </fieldset>
+                    <button type="button" class="button success" onclick="AUTH_LOGIN.validateLogForm()">Sign In</button>
+                    <br>
+                    <div class="row">
+                        <div class="large-6 columns">
+                            <a href="javascript:void()">Forgot password?</a>. Request a new one.
                         </div>
-                    </div>
-                    <div class="row-fluid span12">
-                        <div class="span2">&nbsp;</div>
-                        <div class="control-group span4">
-                            <div class="">
-                                <input type="text" id="inputEmail" name="inputEmail" placeholder="susanna@email.com">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <div class="controls">
-                            PASSWORD
-                        </div>
-                    </div>
-                    <div class="row-fluid span12">
-                        <div class="span2">&nbsp;</div>
-                        <div class="control-group span4">
-                            <div class="">
-                                <input type="password" id="inputPassword" name="inputPassword" placeholder="******">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <div class="controls">
-                            <label class="" style="font-style:italic"><a href="javascript:void()">Forgot password?</a>. Request a new one.</label>
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <div class="controls">
-                            <br />
-                            <button type="button" class="btn btn-primary btn-medium" onclick="AUTH_LOGIN.validateLogForm()">Sign In</button>
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <div class="controls">
-                            <label class="" style="font-style:italic">Don't have an account? <a href="../signup/">Create one now.</a></label>
+                        <div class="large-6 columns">
+                             <label style="font-style:italic">Don't have an account? <a href="../signup/" class="button success">Create one now.</a></label>.
                         </div>
                     </div>
                 </form>
             </div>
-        </div><br />
-        <br />
+        </div>
+        <br>
         <?php
         echo('<br /><br /><br />'); //manual top margin
         include($_SESSION['page']['home_url'] . "templates/footer-nav.php");

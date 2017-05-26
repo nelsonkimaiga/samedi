@@ -16,114 +16,92 @@ $_SESSION['page']['home_url'] = '../../';
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
         <title>Samedi: Sign Up</title>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet">
-            <!--fonts-->
-            <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-                <!--font-awesome-->
-                <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-                    <script type="text/javascript" src="<?= $_SESSION['page']['home_url'] ?>js/user.01.js"></script>
+        <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation.css'>
+        <!--fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        <!--font-awesome-->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="<?= $_SESSION['page']['home_url'] ?>js/user.01.js"></script>
+        <?php
+        include($_SESSION['page']['home_url'] . 'templates/script-tags.php');
+        ?>
+    </head>
+
+    <body>
+        <?php
+        include($_SESSION['page']['home_url'] . 'templates/top-nav.dev.php');
+        ?>
+        <!--End top nav-->
+        <div class="body-content signup row container" style="margin-top:100px; padding-left:15px; padding-right:15px; margin-left: auto; margin-right: auto;">
+            <div class="large-10 columns large-centered">
+                <div class="form-heading" align="center">Create Your account &amp; Start Your Registry</div><br />
+                <form id="frmSubmitSignUp" class="form-horizontal" method="post" action="<?= $_SESSION['page']['home_url'] ?>account/bin/sign-up.php">
                     <?php
-                    include($_SESSION['page']['home_url'] . 'templates/script-tags.php');
-                    ?>
-                    </head>
-
-                    <body>
-                        <?php
-                        include($_SESSION['page']['home_url'] . 'templates/top-nav.dev.php');
+                    if (isset($_SESSION['error']['signup']) && $_SESSION['error']['signup']) {
                         ?>
-                        <!--End top nav-->
-                        <div class="body-content signup row-fluid container" style="margin-top:100px; padding-left:15px; padding-right:15px; margin-left: auto; margin-right: auto;">
-                            <div class="span2">&nbsp;</div>
-                            <div class="span8">
-                                <div class="form-heading" align="center">Create Your account &amp; Start Your Registry</div><br />
-                                <form id="frmSubmitSignUp" class="form-horizontal" method="post" action="<?= $_SESSION['page']['home_url'] ?>account/bin/sign-up.php">
-                                    <?php
-                                    if (isset($_SESSION['error']['signup']) && $_SESSION['error']['signup']) {
-                                        ?>
-                                        <div>
-                                            <div class="alert alert-error" style="font-size:14px">
-                                                A server error has occured. This occurence has been noted and will be resolved shortly.<br />
-                                                Apologies for the inconviniences.
-                                            </div>
-                                        </div>
-                                        <?php
-                                    }
-                                    unset($_SESSION['error']['signup']);
-                                    ?>
-                                    <div class="control-group" id="label-err-container">
-                                        <div class="controls">
-                                            <label class="label-err" style="padding: 10px; font-size:16px">
-                                                Some Fields are empty. Please check and try again!
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="control-group">
-                                        <div class="controls">
-                                            YOUR NAMES
-                                        </div>
-                                    </div>
-                                    <div class="row-fluid span12">
-                                        <div class="span2">&nbsp;</div>
-                                        <div class="control-group span4" id="inputFirstNameGroup">
-                                            <div class="">
-                                                <input type="text" id="inputFirstName" name="inputFirstName" placeholder="First Name">
-                                            </div>
-                                        </div>
-                                        <div class="control-group span4" id="inputLastNameGroup">
-                                            <div class="">
-                                                <input type="text" id="inputLastName" name="inputLastName" placeholder="Last Name">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="control-group">
-                                        <div class="controls">
-                                            EMAIL ADDRESS
-                                        </div>
-                                    </div>
-                                    <div class="row-fluid span12">
-                                        <div class="span2">&nbsp;</div>
-                                        <div class="control-group span4" id="inputEmailGroup">
-                                            <div class="">
-                                                <input type="text" id="inputEmail" name="inputEmail" placeholder="susanna@email.com">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="control-group">
-                                        <div class="controls">
-                                            PASSWORD
-                                        </div>
-                                    </div>
-                                    <div class="row-fluid span12">
-                                        <div class="span2">&nbsp;</div>
-                                        <div class="control-group span4" id="inputPasswordGroup">
-                                            <div class="">
-                                                <input type="password" id="inputPassword" name="inputPassword" placeholder="Password">
-                                            </div>
-                                        </div>
-                                        <div class="control-group span4" id="inputConfirmPasswordGroup">
-                                            <div class="">
-                                                <input type="password" id="inputConfirmPassword" name="inputConfirmPassword" placeholder="Confirm Password">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="control-group">
-                                        <div class="controls">
-                                            <button type="button" class="btn btn-primary btn-medium" onclick="javascript:AuthUser.verifyUserData()">Create Account</button>
-                                        </div>
-                                    </div><br />
-                                    <div class="control-group">
-                                        <div class="controls">
-                                            <label class="" style="font-style:italic">By creating an account, you agree to our <a href="javascript:void()">Terms and Conditions</a> and our <a href="javascript:void()">Client Policy</a></label>
-                                        </div>
-                                    </div>
-                                </form>
+                        <div>
+                            <div class="alert alert-error" style="font-size:14px">
+                                A server error has occured. This occurence has been noted and will be resolved shortly.<br />
+                                Apologies for the inconviniences.
                             </div>
-                        </div><br />
-                        <br />
+                        </div>
                         <?php
-                        echo('<br /><br /><br />'); //manual top margin
-                        include($_SESSION['page']['home_url'] . "templates/footer-nav.php");
-                        ?>
+                    }
+                    unset($_SESSION['error']['signup']);
+                    ?>
+                    <div class="control-group" id="label-err-container">
+                        <div class="controls">
+                            <label class="label-err" style="padding: 10px; font-size:16px">
+                                Some Fields are empty. Please check and try again!
+                            </label>
+                        </div>
+                    </div>
+                    <div class="small-12 medium-6 large-6 columns">
+                        <fieldset>
+                            <label>YOUR NAMES</label>
+                            <input type="text" id="inputFirstName" name="inputFirstName" placeholder="First Name">
+                        </fieldset>
+                    </div>
+                    <div class="small-12 medium-6 large-6 columns">
+                        <fieldset>
+                            <label>LAST NAME</label>
+                            <input type="text" id="inputLastName" name="inputLastName" placeholder="Last Name">
+                        </fieldset>
+                    </div>
+                    <div class="large-12 columns">
+                        <fieldset>
+                            <label>EMAIL</label>
+                            <input type="email" id="inputEmail" name="inputEmail" placeholder="susanna@email.com">
+                        </fieldset>
+                    </div>
+                    <div class="large-12 columns">
+                        <fieldset>
+                            <label>PASSWORD</label>
+                            <input type="password" id="inputPassword" name="inputPassword" placeholder="Password">
+                        </fieldset>
+                    </div>
+                    <div class="large-12 columns">
+                        <fieldset>
+                            <label>CONFIRM PASSWORD</label>
+                            <input type="password" id="inputConfirmPassword" name="inputConfirmPassword" placeholder="Confirm Password">
+                        </fieldset>
+                    </div>
+                    <button type="button" class="button expanded alert" onclick="javascript:AuthUser.verifyUserData()">Create Account</button>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <label class="" style="font-style:italic">By creating an account, you agree to our <a href="javascript:void()">Terms and Conditions</a> and our <a href="javascript:void()">Client Policy</a></label>
+            </div>
+        </div>
+    </form>
+</div>
+</div><br />
+<br />
+<?php
+echo('<br /><br /><br />'); //manual top margin
+include($_SESSION['page']['home_url'] . "templates/footer-nav.php");
+?>
 
-                    </body>
-                    </html>
+</body>
+</html>

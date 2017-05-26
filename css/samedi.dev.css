@@ -13,6 +13,15 @@ p {
     font-family: 'Raleway', serif;
 }
 
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: autossss;
+    margin-left: auto;
+    font-family: 'Raleway', serif;
+}
+
+
 body a:hover{text-decoration:none}
 
 .topnav{background:rgba(0,125,221,0.6)}
