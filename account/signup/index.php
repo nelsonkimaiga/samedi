@@ -87,21 +87,14 @@ $_SESSION['page']['home_url'] = '../../';
                         </fieldset>
                     </div>
                     <button type="button" class="button expanded alert" onclick="javascript:AuthUser.verifyUserData()">Create Account</button>
+                    <label class="" style="font-style:italic">By creating an account, you agree to our <a href="javascript:void()">Terms and Conditions</a> and our <a href="javascript:void()">Client Policy</a></label>
+                </form>
             </div>
         </div>
-        <div class="control-group">
-            <div class="controls">
-                <label class="" style="font-style:italic">By creating an account, you agree to our <a href="javascript:void()">Terms and Conditions</a> and our <a href="javascript:void()">Client Policy</a></label>
-            </div>
-        </div>
-    </form>
-</div>
-</div><br />
-<br />
-<?php
-echo('<br /><br /><br />'); //manual top margin
-include($_SESSION['page']['home_url'] . "templates/footer-nav.php");
-?>
+        <?php
+        echo('<br /><br /><br />'); //manual top margin
+        include($_SESSION['page']['home_url'] . "templates/footer-nav.php");
+        ?>
 
-</body>
+    </body>
 </html>
