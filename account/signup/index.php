@@ -32,7 +32,7 @@ $_SESSION['page']['home_url'] = '../../';
         include($_SESSION['page']['home_url'] . 'templates/top-nav.dev.php');
         ?>
         <!--End top nav-->
-        <div class="body-content signup row container" style="margin-top:100px; padding-left:15px; padding-right:15px; margin-left: auto; margin-right: auto;">
+        <div class="body-content signup row container" style="margin-top:100px;">
             <div class="large-10 columns large-centered">
                 <div class="form-heading" align="center">Create Your account &amp; Start Your Registry</div><br />
                 <form id="frmSubmitSignUp" class="form-horizontal" method="post" action="<?= $_SESSION['page']['home_url'] ?>account/bin/sign-up.php">
@@ -42,7 +42,7 @@ $_SESSION['page']['home_url'] = '../../';
                         <div>
                             <div class="alert alert-error" style="font-size:14px">
                                 A server error has occured. This occurence has been noted and will be resolved shortly.<br />
-                                Apologies for the inconviniences.
+                                Apologies for the inconveniences.
                             </div>
                         </div>
                         <?php
