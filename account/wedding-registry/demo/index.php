@@ -116,12 +116,12 @@ $selectData = $FormData[4].'|'.$FormData[5].'|'.$FormData[6].'|'.$FormData[11];
 		?>
 	</div>
 	
-	<div class="span7 lowerContent">
+	<div class="large-7 columns lowerContent">
 		<br />
 		<div class="row-fluid">
-			<div class="span12 row-fluid" style="height:130px; background:url('../../img/cloud-background.jpg')">
+			<div class="large-12 columns row-fluid" style="height:130px; background:url('../../img/cloud-background.jpg')">
 				<div class="span3"><img src="<?=$_SESSION['page']['home_url']?>img/wedding-rings-medium.png" style="opacity:0.6" /></div>
-				<div class="span6 account-registry-image" style="margin-top:30px">Wedding Registry<br /><br />
+				<div class="large-6 columns account-registry-image" style="margin-top:30px">Wedding Registry<br /><br />
 					<div style="color:#ffffff; font-style:italic; font-size:18px">Your gift for my special day</div>
 				</div>
 			</div>
@@ -136,9 +136,9 @@ $selectData = $FormData[4].'|'.$FormData[5].'|'.$FormData[6].'|'.$FormData[11];
 		?>
 			<form id="frmRegistry" method="post" enctype="multipart/form-data" action="<?=$FormSubmitTo?>">
 				<div class="span4"><h3>Wedding details</h3></div><br />
-				<div class="span12 row-fluid">
+				<div class="large-12 columns row-fluid">
 					<div class="span4 row-fluid" style="padding-left:20px">
-						<div class="span10 inner-heading">Bride</div><br /><br />
+						<div class="large-10 columns inner-heading">Bride</div><br /><br />
 						<div class="control-group" id="inputBrideFNameGroup">
 							<label class="control-label" for="inputBrideFName">First Name</label>
 							<div class="controls">
@@ -158,7 +158,7 @@ $selectData = $FormData[4].'|'.$FormData[5].'|'.$FormData[6].'|'.$FormData[11];
 					</div>
 					
 					<div class="span4 row-fluid" style="padding-left:20px;">
-						<div class="span10 inner-heading">Groom</div><br /><br />
+						<div class="large-10 columns inner-heading">Groom</div><br /><br />
 						<div class="control-group" id="inputGroomFNameGroup">
 							<label class="control-label" for="inputGroomFName">First Name</label>
 							<div class="controls">
@@ -176,7 +176,7 @@ $selectData = $FormData[4].'|'.$FormData[5].'|'.$FormData[6].'|'.$FormData[11];
 					</div>
 				</div>
 
-				<div class="span12 row-fluid dateContainer" style="margin-top:3%">
+				<div class="large-12 columns row-fluid dateContainer" style="margin-top:3%">
 					<div class="span2"><img src="<?=$_SESSION['page']['home_url']?>img/calendar-64.png" /></div>
 					<div class="span3">
 						<div>Day
@@ -217,14 +217,14 @@ $selectData = $FormData[4].'|'.$FormData[5].'|'.$FormData[6].'|'.$FormData[11];
 						</select>
 					</div>
 					<div  class="span3"></div>
-					<div  class="span7 dateError" id="dateError"></div>
+					<div  class="large-7 columns dateError" id="dateError"></div>
 				</div><br /><!--dateContainer-->
 				
-				<div class="span9 row-fluid photoContainer" style="margin-top:5%">
+				<div class="large-9 columns row-fluid photoContainer" style="margin-top:5%">
 					<div class="span2">
 						<img src="<?=$_SESSION['page']['home_url']?>img/image-icon-64.png" />
 					</div>
-					<div class="span9">
+					<div class="large-9 columns">
 						<div style="font-size:14px">
 							Upload pre-wedding pictures&nbsp;&nbsp;<span class="help-inline">(Optional)</span>
 						</div><br />
@@ -238,7 +238,7 @@ $selectData = $FormData[4].'|'.$FormData[5].'|'.$FormData[6].'|'.$FormData[11];
 						if($FormData[7]!=''){
 						?>
 						<ul class="thumbnails">
-							<li class="span12">
+							<li class="large-12 columns">
 								<a href="<?=$userImagePath.'/'.$FormData[7]?>" target="_blank" title="click to view a larger image">
 									<div class="thumbnail">
 										<img src="<?=$userImagePath.'/'.$FormData[7]?>" alt="">
@@ -268,9 +268,9 @@ $selectData = $FormData[4].'|'.$FormData[5].'|'.$FormData[6].'|'.$FormData[11];
 					</div>
 				</div><br /><!--photoContainer-->
 
-				<div class="span11 row-fluid otherDetailsContainer" style="margin-top:5%;">
+				<div class="large-11 columns row-fluid otherDetailsContainer" style="margin-top:5%;">
 					<div class="span2 inner-heading">Other details</div>
-					<div class="span10 row-fluid">
+					<div class="large-10 columns row-fluid">
 						<div class="control-group" id="weddingLocationGroup">
 							<label class="control-label span4" for="weddingLocation">Wedding Location</label>
 							<div class="controls">
@@ -297,9 +297,9 @@ $selectData = $FormData[4].'|'.$FormData[5].'|'.$FormData[6].'|'.$FormData[11];
 					</div>
 				</div><br /><!--otherDetailsContainer-->
 				
-				<div class="span11 row-fluid weddingStatusContainer" style="margin-top:5%;">
+				<div class="large-11 columns row-fluid weddingStatusContainer" style="margin-top:5%;">
 					<div class="span2 inner-heading">Wedding Status</div>
-					<div class="span9 row-fluid">
+					<div class="large-9 columns row-fluid">
 						<div class="">
 							<select class="selectWeddingStatus input-medium" id="selectWeddingStatus" name="selectWeddingStatus">
 								<option value="Private">Private</option>
@@ -311,7 +311,7 @@ $selectData = $FormData[4].'|'.$FormData[5].'|'.$FormData[6].'|'.$FormData[11];
 					</div>
 				</div><!--weddingStatusContainer-->
 				
-				<div class="span9 row-fluid saveElement" style="margin-top:5%;">
+				<div class="large-9 columns row-fluid saveElement" style="margin-top:5%;">
 					<input type="hidden" id="setDate" name="setDate" value="" />
 					<div class="label-err-container" id="label-err-container">
 						<div class="label-err">
@@ -337,7 +337,7 @@ $selectData = $FormData[4].'|'.$FormData[5].'|'.$FormData[6].'|'.$FormData[11];
 						<button type="button" class="btn btn-inverse btn-large">Cancel</button>
 					</div>
 				</div><!--saveElement--><br />
-				<div class="span10" style="padding-left:2%">
+				<div class="large-10 columns" style="padding-left:2%">
 					<br />*You can always edit this registry. Just click <strong>Manage Registry</strong> - on the left.
 				</div>
 			</form>

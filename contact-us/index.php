@@ -21,7 +21,7 @@ include(local_url.'templates/script-tags.php');
 <!--End top nav-->
 <div class="body-content account-page row-fluid">
 	<div class="span3">&nbsp;</div>
-	<div class="innnerBodyContent span6 row-fluid" style="margin-top:5%;">
+	<div class="innnerBodyContent large-6 columns row-fluid" style="margin-top:5%;">
 		<div class="" align="center" style="font-size:30px;">
         	Follow Us For Amazing Offers
        	</div><br>

@@ -40,9 +40,9 @@ include(local_url.'templates/script-tags.php');
 ?>
 <!--End top nav-->
 <div class="body-content account-page row-fluid">
-	<div class="span12 lowerContent">
+	<div class="large-12 columns lowerContent">
 		<div class="row-fluid">
-			<div class="span12 row-fluid" style="height:50px; background:url('../../../img/cloud-background.jpg')">
+			<div class="large-12 columns row-fluid" style="height:50px; background:url('../../../img/cloud-background.jpg')">
 				&nbsp;
 			</div>
 		  </div><br />
@@ -50,15 +50,15 @@ include(local_url.'templates/script-tags.php');
 	
 	<div class="innnerBodyContent" style="">
 		<div class="span1" style="width:auto">&nbsp;</div>
-		<div class="span11 row-fluid item-shop-container" style="margin-left:0.5%">
+		<div class="large-11 columns row-fluid item-shop-container" style="margin-left:0.5%">
 			<div class="span1 row-fluid">
 				
 			</div>
 			
-			<div class="span11 row-fluid item-shop-main" style="padding-top:10px; padding-left:10px;">
+			<div class="large-11 columns row-fluid item-shop-main" style="padding-top:10px; padding-left:10px;">
 				
-				<div class="span10 row-fluid" style="height:100px; width:100%; border:solid thin #000000; margin-left:0; padding:10px; background:url('../../../img/couple-banner.jpg'); background-size:cover">
-					<div class="span12 row-fluid">
+				<div class="large-10 columns row-fluid" style="height:100px; width:100%; border:solid thin #000000; margin-left:0; padding:10px; background:url('../../../img/couple-banner.jpg'); background-size:cover">
+					<div class="large-12 columns row-fluid">
 						<div class="span1">&nbsp;</div>
 						<div class="span3" style="font-size:40px; font-weight:bold; font-family: 'Playball', cursive; padding-top:20px; text-align:right">
 							<?php echo($invitation->brideInfo); ?>
@@ -74,7 +74,7 @@ include(local_url.'templates/script-tags.php');
 				</div>
 				
 				
-				<div class="span10 row-fluid refine-container" style="height:80px; width:100%; margin-top:20px; margin-left:0; border-bottom:solid thick #999999; padding-top:20px">
+				<div class="large-10 columns row-fluid refine-container" style="height:80px; width:100%; margin-top:20px; margin-left:0; border-bottom:solid thick #999999; padding-top:20px">
 					<h4>You wish to purchase this item.</h4><br /><br />
 					
 					<!--item display -->
@@ -82,18 +82,18 @@ include(local_url.'templates/script-tags.php');
 						<div class="span5">
 							<img class="" src="<?=$_SESSION['page']['home_url']?>img/<?=$arrProducts['image']?>" /><br /><br />
 						</div>
-						<div class="span6 row-fluid">						
-							<div class="span12 item-abstract" style="font-size:16px">
+						<div class="large-6 columns row-fluid">						
+							<div class="large-12 columns item-abstract" style="font-size:16px">
 								<a href="<?=local_url.'shop/'.$arrProducts['url']?>"><?php echo($arrProducts['abstract']); ?></a>
 							</div>
-							<div class="span12 item-quantity row-fluid" style="font-size:20px; font-weight:bold">
+							<div class="large-12 columns item-quantity row-fluid" style="font-size:20px; font-weight:bold">
 								<div class="span3">Price</div>
-								<div class="span7">
+								<div class="large-7 columns">
 									<sup>Ksh.</sup><span class="item-price-itemCode price-per"><?php echo($arrProducts['price']); ?></span><sup>00</sup>&nbsp;
 									<span style="font-size:14px; color:#666666;">(From Ksh. <?php echo($arrProducts['org_price']); ?>)</span>
 								</div>
 							</div>
-							<div class="span12 item-quantity row-fluid" style="font-size:16px; font-weight:bold">
+							<div class="large-12 columns item-quantity row-fluid" style="font-size:16px; font-weight:bold">
 								<div class="span3">Quantity</div>
 								<div class="span5">
 									<select class="span5" onchange="javascript:product.processPriceAtCheckOut(this.value)">
@@ -105,35 +105,35 @@ include(local_url.'templates/script-tags.php');
 									</select>
 								</div>
 							</div>
-							<div class="span12 item-quantity row-fluid" style="font-size:20px; font-weight:bold">
+							<div class="large-12 columns item-quantity row-fluid" style="font-size:20px; font-weight:bold">
 								<div class="span3">=</div>
 								<div class="span5">
 									<sup>Ksh.</sup>&nbsp;<span class="item-price-itemCode total-price">23,400</span>&nbsp;<sup>00</sup>&nbsp;
 								</div>
 							</div>
-							<div class="span12 row-fluid" style="font-size:20px; font-weight:bold">
+							<div class="large-12 columns row-fluid" style="font-size:20px; font-weight:bold">
 								<div class="span3">&nbsp;</div>
-								<div class="span8">
+								<div class="large-8 columns">
 									<label>
 										<input type="checkbox" name="giftCard"/>&nbsp;Include Gift Card and Gift Wrapping
 									</label>
 								</div>
 							</div>
-							<div class="span12 row-fluid" style="font-size:14; border-top:solid 2px #CCCCCC">
+							<div class="large-12 columns row-fluid" style="font-size:14; border-top:solid 2px #CCCCCC">
 								<div class="span3"><strong>Delivery</strong></div>
-								<div class="span8 row-fluid" style="margin-top:2%">
-									<label class="span11">
+								<div class="large-8 columns row-fluid" style="margin-top:2%">
+									<label class="large-11 columns">
 										<input type="radio" name="deliveryOptions" value="1" checked="checked"/>&nbsp;Deliver to my location
 									</label>
-									<label class="span11" style="margin-left:0">
+									<label class="large-11 columns" style="margin-left:0">
 										<input type="radio" name="deliveryOptions" value="2" />&nbsp;Delivery to couple's location
 									</label>
-									<label class="span11" style="margin-left:0">
+									<label class="large-11 columns" style="margin-left:0">
 										<input type="radio" name="deliveryOptions" value="3" />&nbsp;Pick-up from nearest store (<a href="">View nearest store</a>)
 									</label>
 								</div>
 							</div>
-							<div class="span11 item-buttons">
+							<div class="large-11 columns item-buttons">
 								<div><button class="btn btn-warning">Proceed to Checkout</button></div>
 							</div>
 						</div>

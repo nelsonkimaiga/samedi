@@ -26,17 +26,17 @@ include(local_url.'templates/script-tags.php');
 ?>
 <!--End top nav-->
 <div class="body-content account-page row-fluid" style="margin-top:3%">
-	<div class="span12 lowerContent">
+	<div class="large-12 columns lowerContent">
 		<div class="row-fluid">
-			<div class="span12 row-fluid" style="height:450px; background:url('../img/wedding-2.jpg'); color:#9F5000" align="center">
-                <div class="span7">
+			<div class="large-12 columns row-fluid" style="height:450px; background:url('../img/wedding-2.jpg'); color:#9F5000" align="center">
+                <div class="large-7 columns">
                 	&nbsp;
                 </div>
                 <div class="span5" style="margin-top:70px">
-                    <div class="span12 account-registry-image" style="font-size:40px;">
+                    <div class="large-12 columns account-registry-image" style="font-size:40px;">
                         Wedding Gift Registry<br /><br />
                     </div><br /><br />
-                    <div class="span11 account-registry-image" style="font-size:20px; color:#000;">
+                    <div class="large-11 columns account-registry-image" style="font-size:20px; color:#000;">
                         <div style="padding-left:10%" align="left">
                         	<img src="<?=$_SESSION['page']['home_url']?>/img/rings.png" />&nbsp;Create a Wedding Gift Registry <br>
 							<img src="<?=$_SESSION['page']['home_url']?>/img/rings.png"/>&nbsp;Create a Photo Gallery<br>

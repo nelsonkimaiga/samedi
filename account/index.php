@@ -64,7 +64,7 @@ $local_url = '../';
                                         </div></a>
 
                                     <div class="inline-heading" style="margin-top:50px">Manage Existing Registries</div><br />
-                                    <div class="no-information-div span9" style="margin-left:0">
+                                    <div class="no-information-div large-9 columns" style="margin-left:0">
                                         <?php
                                         echo($registry->strRegistryHTML);
                                         ?>

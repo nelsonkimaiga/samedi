@@ -19,7 +19,7 @@
 				<div class="span1">
 					Or
 				</div>
-				<div class="span6">
+				<div class="large-6 columns">
 					<a href="<?=$_SESSION["page"]["home_url"]?>account/signup/">
 						<button class="btn btn-large btn-warning">
 							Create Account

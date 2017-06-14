@@ -30,7 +30,7 @@ include($_SESSION['page']['home_url'].'templates/script-tags.php');
 ?>
 <div class="body-content account-page row-fluid" style="margin-top:100px;">
 	<div class="span2">&nbsp;</div>
-	<div class="span9 lowerContent">
+	<div class="large-9 columns lowerContent">
 		<div class="row-fluid" style="background:#22B7FF; padding:10px 15px; color:#FFF; font-size:16px">
 			Publish Registry - Wedding Gift Registry | <span style="color:#333; font-weight:bold">Payment</span>
 		</div><br />

@@ -33,27 +33,27 @@ define('local_url', '../');
         ?>
         <!--End top nav-->
         <div class="body-content account-page row">
-            <div class="large 2">&nbsp;</div>
-            <div class="innnerBodyContent large 8 row" style="margin-top:5%;">
+            <div class="large-2 columns">&nbsp;</div>
+            <div class="row innnerBodyContent large-8 columns" style="margin-top:5%;">
                 <div class="" align="center" style="font-size:30px;">
                     Find a Registry
-                </div><br>
+                </div>
                 <form class="form-horizontal form-login-submit" action="?find=true" method="post" autocomplete="off">
                         <div class="control-group">
                             <div class="controls">
                                 REGISTRANT&apos;S NAME
                             </div>
                         </div>
-                        <div class="row 12">
-                            <div class="large 2">&nbsp;</div>
-                            <div class="control-group large 6">
+                        <div class="row large-12 columns">
+                            <div class="large-2 columns">&nbsp;</div>
+                            <div class="control-group large-6 columns">
                                 <div class="">
-                                    <input type="text" id="inputRegistrantName" name="inputRegistrantName" class="large 11" placeholder="e.g Susanna" style="padding:20px; font-size:16px">
+                                    <input type="text" id="inputRegistrantName" name="inputRegistrantName" class="large-11 columns" placeholder="e.g Susanna" style="padding:20px; font-size:16px">
                                 </div>
                             </div>
                         </div>
                         <div class="control-group">
-                            <div align="center" class="large 8">
+                            <div align="center" class="large-8 columns">
                                 OR
                             </div>
                         </div>
@@ -62,19 +62,19 @@ define('local_url', '../');
                                 REGISTRANT&apos;S UNIQUE CODE
                             </div>
                         </div>
-                        <div class="row-fluid large 12">
-                            <div class="large 2">&nbsp;</div>
-                            <div class="control-group large 6">
+                        <div class="row large-12 columns">
+                            <div class="large-2 columns">&nbsp;</div>
+                            <div class="control-group large-6 columns">
                                 <div class="">
-                                    <input type="text" id="inputRegistrantCode" name="inputRegistrantCode" class="large 11" placeholder="e.g 6YTTE349B" style="padding:20px; font-size:16px">
+                                    <input type="text" id="inputRegistrantCode" name="inputRegistrantCode" class="large-11 columns" placeholder="e.g 6YTTE349B" style="padding:20px; font-size:16px">
                                 </div>
                             </div>
                         </div>
-                        <div class="row-fluid large 12">
-                            <div class="large 2">&nbsp;</div>
-                            <div class="control-group large 6">
+                        <div class="row large-12 columns">
+                            <div class="large-2 columns">&nbsp;</div>
+                            <div class="control-group large-6 columns">
                                 <div class="">
-                                    <button type="button" class="button secondary expanded">Search</button>
+                                    <button type="button" class="button secondary expanded">Search <i class="fa fa-search" aria-hidden="true"></i></button>
                                 </div>
                             </div>
                         </div>

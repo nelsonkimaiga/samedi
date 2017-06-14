@@ -52,7 +52,7 @@ public function getPublicRegistries(){
 				}
 			}else{
 				$this->strDivHTML = '
-					<div class="alert alert-info span12" style="margin-left:0; margin-top:10px;">
+					<div class="alert alert-info large-12 columns" style="margin-left:0; margin-top:10px;">
 						There are no graduation registries yet.
 					</div>
 				';

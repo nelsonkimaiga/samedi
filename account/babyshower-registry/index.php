@@ -113,12 +113,12 @@ function splitEntry($str, $split, $char) {
 
                         <div class="body-content account-page row-fluid" style="margin-top:100px;">
                             <div class="span2">&nbsp;</div>	
-                            <div class="span9 lowerContent">
+                            <div class="large-9 columns lowerContent">
                                 <br />
                                 <div class="row-fluid">
-                                    <div class="span12 row-fluid" style="height:130px; background:#88C4FF">
+                                    <div class="large-12 columns row-fluid" style="height:130px; background:#88C4FF">
                                         <div class="span3"><img src="<?= $_SESSION['page']['home_url'] ?>img/baby-cart-medium.png" style="opacity:0.6" /></div>
-                                        <div class="span6 account-registry-image" style="margin-top:30px">Baby Shower Registry<br /><br />
+                                        <div class="large-6 columns account-registry-image" style="margin-top:30px">Baby Shower Registry<br /><br />
                                             <span style="font-size:15px; font-style:italic">Babies are always more trouble than you thought, and always more wonderful - Charles Osgood</span>
                                         </div>
                                     </div>
@@ -132,7 +132,7 @@ function splitEntry($str, $split, $char) {
                                     unset($_SESSION['registry']['temp_detail_edit']);
                                     ?>
                                     <form id="frmRegistry" method="post" enctype="multipart/form-data" action="<?= $FormSubmitTo ?>">
-                                        <div class="span12 row-fluid">
+                                        <div class="large-12 columns row-fluid">
                                             <div class="span4 row-fluid" style="padding-left:20px">
                                                 <div class="control-group" id="inputFNameGroup">
                                                     <label class="control-label" for="inputFName">First Name</label>
@@ -165,7 +165,7 @@ function splitEntry($str, $split, $char) {
                                             </div>     
                                         </div>
 
-                                        <div class="span12 row-fluid dateContainer" style="margin-top:3%">
+                                        <div class="large-12 columns row-fluid dateContainer" style="margin-top:3%">
                                             <div class="span2"><img src="<?= $_SESSION['page']['home_url'] ?>img/calendar-64.png" /></div>
                                             <div class="span3">
                                                 <div>Day
@@ -206,14 +206,14 @@ function splitEntry($str, $split, $char) {
                                                 </select>
                                             </div>
                                             <div  class="span3"></div>
-                                            <div  class="span7 dateError" id="dateError"></div>
+                                            <div  class="large-7 columns dateError" id="dateError"></div>
                                         </div><br /><!--dateContainer-->
 
-                                        <div class="span12 row-fluid photoContainer" style="margin-top:5%">
+                                        <div class="large-12 columns row-fluid photoContainer" style="margin-top:5%">
                                             <div class="span2">
                                                 <img src="<?= $_SESSION['page']['home_url'] ?>img/image-icon-64.png" />
                                             </div>
-                                            <div class="span9">
+                                            <div class="large-9 columns">
                                                 <div style="font-size:14px">
                                                     Upload pictures&nbsp;&nbsp;<span class="help-inline">(Optional)</span>
                                                 </div><br />
@@ -227,7 +227,7 @@ function splitEntry($str, $split, $char) {
                                                 if ($FormData[7] != '') {
                                                     ?>
                                                     <ul class="thumbnails">
-                                                        <li class="span12">
+                                                        <li class="large-12 columns">
                                                             <a href="<?= $userImagePath . '/' . $FormData[7] ?>" target="_blank" title="click to view a larger image">
                                                                 <div class="thumbnail">
                                                                     <img src="<?= $userImagePath . '/' . $FormData[7] ?>" alt="">
@@ -257,11 +257,11 @@ function splitEntry($str, $split, $char) {
                                             </div>
                                         </div><br /><!--photoContainer-->
 
-                                        <div class="span12 row-fluid otherDetailsContainer" style="margin-top:6%;">
+                                        <div class="large-12 columns row-fluid otherDetailsContainer" style="margin-top:6%;">
                                             <div class="span2">
                                                 <img src="<?= $_SESSION['page']['home_url'] ?>img/Location-64.png" />
                                             </div>
-                                            <div class="span9 row-fluid">
+                                            <div class="large-9 columns row-fluid">
                                                 <div class="control-group" id="babyshowerLocationGroup">
                                                     <label class="control-label span4" for="babyshowerLocation">Baby shower Location</label>
                                                     <div class="controls">
@@ -271,12 +271,12 @@ function splitEntry($str, $split, $char) {
                                             </div>
                                         </div><br /><!--otherDetailsContainer-->
 
-                                        <div class="span12 row-fluid babyshowerStatusContainer" style="margin-top:5%;">
+                                        <div class="large-12 columns row-fluid babyshowerStatusContainer" style="margin-top:5%;">
                                             <div class="span2">
                                                 <img src="<?= $_SESSION['page']['home_url'] ?>img/account-locked.png" />
                                             </div>
                                             <div class="span3">Baby shower Status</div>
-                                            <div class="span7 row-fluid">
+                                            <div class="large-7 columns row-fluid">
                                                 <div class="">
                                                     <select class="selectbabyshowerStatus input-medium" id="selectbabyshowerStatus" name="selectbabyshowerStatus">
                                                         <option value="Private">Private</option>
@@ -288,7 +288,7 @@ function splitEntry($str, $split, $char) {
                                             </div>
                                         </div><!--babyshowerStatusContainer-->
 
-                                        <div class="span9 row-fluid saveElement" style="margin-top:5%;">
+                                        <div class="large-9 columns row-fluid saveElement" style="margin-top:5%;">
                                             <input type="hidden" id="setDate" name="setDate" value="" />
                                             <div class="label-err-container" id="label-err-container">
                                                 <div class="label-err">

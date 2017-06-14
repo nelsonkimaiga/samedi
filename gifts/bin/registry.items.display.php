@@ -40,11 +40,11 @@ try{
 				if($sqlVotes->rowCount()>0){
 					$voteRow = $sqlVotes->fetch(PDO::FETCH_ASSOC);
 					if($voteRow['vote']=='thumbs_up'){
-						$strVoteHTML = '<div class="span6"><img src="'.local_url.'img/thumbs-up.png"/>&nbsp;&nbsp;
+						$strVoteHTML = '<div class="large-6 columns"><img src="'.local_url.'img/thumbs-up.png"/>&nbsp;&nbsp;
 						'.($row['thumbs_up']).' + <span style="font-size:13px">Your Vote</span>&nbsp;</div><div class="span5"><img src="'.local_url.'img/thumbs-down.png"/>&nbsp;&nbsp;
 						'.$row['thumbs_down'].'</div>';
 					}else{
-						$strVoteHTML = '<div class="span6"><img src="'.local_url.'img/thumbs-up.png"/>&nbsp;&nbsp;
+						$strVoteHTML = '<div class="large-6 columns"><img src="'.local_url.'img/thumbs-up.png"/>&nbsp;&nbsp;
 						'.$row['thumbs_up'].'</div><div class="span5"><img src="'.local_url.'img/thumbs-down.png"/>&nbsp;&nbsp;
 						'.$row['thumbs_down'].'</div>';
 					}
@@ -63,7 +63,7 @@ try{
 					<div class="item-image">
 						<a href="'.local_url.'shop/'.$row['page_url'].'"><img class="img-rounded" src="'.$_SESSION['page']['home_url'].'img/'.$row['image'].'" /></a>
 					</div><br />
-					<div class="span6 item-price" style="padding-top:10px">
+					<div class="large-6 columns item-price" style="padding-top:10px">
 						<sup>Ksh.</sup>'.$row['sale_price'].'<sup>00</sup>&nbsp;
 					</div>
 					'.$strSave.'
@@ -72,7 +72,7 @@ try{
 						<a href="'.local_url.'shop/'.$row['page_url'].'">'.$str.'</a>
 					</div><br />
 					'.$strVoteHTML.'
-					<div class="row-fluid span12">
+					<div class="row-fluid large-12 columns">
 						'.$reviews.'
 					</div>
 				 </div>
@@ -82,14 +82,14 @@ try{
 		}else{
 			if($specialCateg=='baby_shower'){
 				$ITEMS_DISPLAY = '2.0##
-					<div class="alert alert-info span12" style="margin-left:0; margin-top:10px;">
+					<div class="alert alert-info large-12 columns" style="margin-left:0; margin-top:10px;">
 						There are no items specified for the baby shower registry yet.
 						Please select other items below:
 					</div><br />
 				';
 			}elseif($specialCateg=='graduation'){
 				$ITEMS_DISPLAY = '2.0##
-					<div class="alert alert-info span12" style="margin-left:0; margin-top:10px;">
+					<div class="alert alert-info large-12 columns" style="margin-left:0; margin-top:10px;">
 						There are no items specified for the graduation registry yet.
 						Please select other items below:
 					</div><br />

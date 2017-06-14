@@ -43,19 +43,19 @@ $strTOPNAV = '
 <div class="row-fluid topnav" style="">
 <div class="span1" id="topnav-logo">
 	<div class="row-fluid">
-		<div align="center" class="span12">
+		<div align="center" class="large-12 columns">
 			<a href="'.$_SESSION["page"]["home_url"].'">
 				<div class="span3 logo-char-container" style="font-size:24px">
 					S
 				</div>
-				<div class="span9 logo-line-container" style="font-size:18px;">
+				<div class="large-9 columns logo-line-container" style="font-size:18px;">
 					amedi.co.ke
 				</div>
 			</a>
 		</div>
 	</div>
 </div>
-<div style="" class="span7" id="topnav-search-quickLinks">
+<div style="" class="large-7 columns" id="topnav-search-quickLinks">
 	<div class="row-fluid">
 		<div align="right" style="margin-right:10px;">
 			<a href="javascript:void()">&raquo; Gift Sets</a>&nbsp;&nbsp;
@@ -66,8 +66,8 @@ $strTOPNAV = '
 		<div>
 			<form class="form-search">
 			  <div class="span1">&nbsp;</div>
-			  <div class="input-append span10">
-				<input type="text" class="span12 search-query" id="search-query">
+			  <div class="input-append large-10 columns">
+				<input type="text" class="large-12 columns search-query" id="search-query">
 				<button type="submit" class="btn btn-warning btn-search">Search</button>
 			  </div>
 			</form>
@@ -78,7 +78,7 @@ $strTOPNAV = '
 	<div class="row-fluid">
 		<div align="right" style="margin-right:10px;"><i class="icon-question-sign icon-white"></i>&nbsp;Help</div><br />
 		'.$memberContainer.'
-		<div class="span6 row-fluid" id="shopping-cart">
+		<div class="large-6 columns row-fluid" id="shopping-cart">
 		  <div class="span5" title="Cart">
 		  <a href="'.$_SESSION["page"]["home_url"].'shop/cart/" style="color:#FFFFFF">
 			<img src="'.$_SESSION["page"]["home_url"].'img/shoping_cart-img.png" height="30" width="30" id="shopping-cart-img" />

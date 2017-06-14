@@ -350,24 +350,24 @@ Landscape phone to portrait tablet
     .span4{}
     .span5{}
 
-    #topnav-logo .span6{
+    #topnav-logo .large-6 columns{
         width:auto;
         display:inline;
     }
 
-    .span7{}
+    .large-7 columns{}
 
-    .span8{}
+    .large-8 columns{}
 
-    #topnav-logo .span9{
+    #topnav-logo .large-9 columns{
         width:auto;
         display:inline;
     }
-    .span10{}
+    .large-10 columns{}
 
-    .span11{}
+    .large-11 columns{}
 
-    .span12{}
+    .large-12 columns{}
     body{padding:0;}
     #slider, #slider div.sliderInner {
         display:none;
@@ -421,19 +421,19 @@ Landscape phone to portrait tablet
     #stores-container,#shipping-container{margin-top:5%}
 
     #brand-container .span3,
-    #brand-container .span9,
+    #brand-container .large-9 columns,
     #stores-container .span3,
-    #stores-container .span9,
+    #stores-container .large-9 columns,
     #shipping-container .span3,
-    #shipping-container .span9{display:inline-block}
+    #shipping-container .large-9 columns{display:inline-block}
 
     #brand-container .span3,
     #stores-container .span3,
     #shipping-container .span3{width:20%}
 
-    #brand-container .span9,
-    #stores-container .span9,
-    #shipping-container .span9{width:70%;}
+    #brand-container .large-9 columns,
+    #stores-container .large-9 columns,
+    #shipping-container .large-9 columns{width:70%;}
 
     #heading-text-one,#heading-text-two,
     #heading-text-three{margin-top:-3%}

@@ -32,9 +32,9 @@ include(local_url.'templates/script-tags.php');
 ?>
 <!--End top nav-->
 <div class="body-content account-page row-fluid">
-	<div class="span12 lowerContent">
+	<div class="large-12 columns lowerContent">
 		<div class="row-fluid">
-			<div class="span12 row-fluid" style="height:100px; background:url('../../../img/cloud-background.jpg')">
+			<div class="large-12 columns row-fluid" style="height:100px; background:url('../../../img/cloud-background.jpg')">
 				<div class="span2">
 					&nbsp;
 				</div>
@@ -42,7 +42,7 @@ include(local_url.'templates/script-tags.php');
 					<strong style="font-size:25px">Find a perfect gift,</strong><br />
 					<span style="font-size:16px">For the Perfect couple</span>
 				</div>
-				<div class="span7" style="margin-top:30px">
+				<div class="large-7 columns" style="margin-top:30px">
 					<form class="form-horizontal invite-form" action="../bin/invitation.processing.php" method="post">
 					  <input type="text" placeholder="Enter the Invitation Code" name="invitation_registry" id="invitation_registry" size="span4" />
 					  <button type="button" class="btn" onclick="INVITATION_JSMOD.validateInviteCode()">View Registry</button><br />

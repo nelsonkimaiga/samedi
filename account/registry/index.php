@@ -35,41 +35,41 @@ $_SESSION['page']['home_url'] = '../../';
         //start userdb dependent classes	
         ?>
         <!--End top nav-->
-        <div class="body-content account-page row-fluid" style="margin-top:100px;">
-            <div class="span2">&nbsp;</div>
-            <div class="span9">
+        <div class="body-content account-page row" style="margin-top:100px;">
+            <div class="large-2 columns">&nbsp;</div>
+            <div class="large-9 columns">
                 <div class="inline-heading">Create A New Gift Registry</div><br />
                 <br />
-                <div class="row-fluid">
+                <div class="row">
                     <a href="<?= $_SESSION['page']['home_url'] ?>account/wedding-registry/">
-                        <div class="span6 row-fluid" style="height:130px; background:#88C4FF">
-                            <div class="span5"><img src="<?= $_SESSION['page']['home_url'] ?>img/wedding-rings-medium.png" style="opacity:0.6" /></div>
+                        <div class="large-6 columns row" style="height:130px; background:#88C4FF">
+                            <div class="large-5 columns"><img src="<?= $_SESSION['page']['home_url'] ?>img/wedding-rings-medium.png" style="opacity:0.6" /></div>
 
-                            <div class="span6 account-registry-select" style="color:#333">Wedding Gift Registry<br /><br />
+                            <div class="large-6 columns account-registry-select" style="color:#333">Wedding Gift Registry<br /><br />
                                 <div style="color:#ffffff;">Start / Manage<i class="icon-chevron-right icon-white" style="margin-top:4px"></i></div>
                             </div>
                         </div>
                     </a>
                     <a href="<?= $_SESSION['page']['home_url'] ?>account/babyshower-registry/">
-                        <div class="span6 row-fluid" style="height:130px; background:#88C4FF; margin-left:10px">
-                            <div class="span5"><img src="<?= $_SESSION['page']['home_url'] ?>img/baby-cart-medium.png" style="opacity:0.6" /></div>
-                            <div class="span6 account-registry-select" style="color:#333">Baby Shower Gift Registry<br /><br />
+                        <div class="large-6 columns row" style="height:130px; background:#88C4FF; margin-left:10px">
+                            <div class="large-5 columns"><img src="<?= $_SESSION['page']['home_url'] ?>img/baby-cart-medium.png" style="opacity:0.6" /></div>
+                            <div class="large-6 columns account-registry-select" style="color:#333">Baby Shower Gift Registry<br /><br />
                                 <div style="color:#ffffff;">Start / Manage<i class="icon-chevron-right icon-white" style="margin-top:4px"></i></div>
                             </div>
                         </div>
                     </a>
                     <a href="<?= $_SESSION['page']['home_url'] ?>account/graduation-registry/">
-                        <div class="span6 row-fluid" style="height:130px; margin-left:0; margin-top:20px; background:#88C4FF">
-                            <div class="span5"><img src="<?= $_SESSION['page']['home_url'] ?>img/graduation-cap-medium.png" style="opacity:0.6" /></div>
-                            <div class="span6 account-registry-select" style="color:#333">Graduation Gift Registry<br /><br />
+                        <div class="large-6 columns row" style="height:130px; margin-left:0; margin-top:20px; background:#88C4FF">
+                            <div class="large-5 columns"><img src="<?= $_SESSION['page']['home_url'] ?>img/graduation-cap-medium.png" style="opacity:0.6" /></div>
+                            <div class="large-6 columns account-registry-select" style="color:#333">Graduation Gift Registry<br /><br />
                                 <div style="color:#ffffff;">Start / Manage<i class="icon-chevron-right icon-white" style="margin-top:4px"></i></div>
                             </div>
                         </div>
                     </a>
                     <a href="<?= $_SESSION['page']['home_url'] ?>account/birthday-registry/">
-                        <div class="span6 row-fluid" style="height:130px; margin-top:20px; background:#88C4FF; margin-left:10px">
-                            <div class="span5"><img src="<?= $_SESSION['page']['home_url'] ?>img/birthday-medium.png" style="opacity:0.6" /></div>
-                            <div class="span6 account-registry-select" style="color:#333">Birthday Gift Registry<br /><br />
+                        <div class="large-6 columns row" style="height:130px; margin-top:20px; background:#88C4FF; margin-left:10px">
+                            <div class="large-5 columns"><img src="<?= $_SESSION['page']['home_url'] ?>img/birthday-medium.png" style="opacity:0.6" /></div>
+                            <div class="large-6 columns account-registry-select" style="color:#333">Birthday Gift Registry<br /><br />
                                 <div style="color:#ffffff;">Start / Manage<i class="icon-chevron-right icon-white" style="margin-top:4px"></i></div>
                             </div>
                         </div>
@@ -77,10 +77,10 @@ $_SESSION['page']['home_url'] = '../../';
                 </a>
                 <br><hr /><br>
                         <a href="">
-                            <div class="row-fluid">
-                                <div class="span6 row-fluid" style="height:130px; margin-top:20px; background:#88C4FF;">
-                                    <div class="span5"><img src="<?= $_SESSION['page']['home_url'] ?>img/gift-medium.png" style="opacity:0.6" /></div>
-                                    <div class="span6 account-registry-select" style="color:#333">Specify Other Gift Registry<br /><br />
+                            <div class="row">
+                                <div class="large-6 columns row" style="height:130px; margin-top:20px; background:#88C4FF;">
+                                    <div class="large-5 columns"><img src="<?= $_SESSION['page']['home_url'] ?>img/gift-medium.png" style="opacity:0.6" /></div>
+                                    <div class="large-6 columns account-registry-select" style="color:#333">Specify Other Gift Registry<br /><br />
                                         <div style="color:#ffffff;">Start / Manage<i class="icon-chevron-right icon-white" style="margin-top:4px"></i></div>
                                     </div>
                                 </div>
@@ -90,7 +90,7 @@ $_SESSION['page']['home_url'] = '../../';
 
                         </div><br /><!--end bodycontent-->
                         <div class="footer-container-end">
-                            <div class="span1" style="width:1%">
+                            <div class="large-1 columns" style="width:1%">
                                 &nbsp;
                             </div>
                             &copy;&nbsp;&nbsp;Samedi Registry Co.&nbsp;

@@ -82,7 +82,7 @@ if ($memberAccess) {
 }
 ?>
             <!--Add to cart is temporarily disabled
-                    <div class="span6 row-fluid" id="shopping-cart">
+                    <div class="large-6 columns row-fluid" id="shopping-cart">
                       <div class="span5" title="Cart">
                       <a href="<?= $_SESSION["page"]["home_url"] ?>shop/cart/" style="color:#FFFFFF">
                             <img src="<?= $_SESSION["page"]["home_url"] ?>img/shoping_cart-img.png" height="30" width="30" id="shopping-cart-img" />

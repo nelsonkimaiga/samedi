@@ -1,8 +1,8 @@
 <div class="row-fluid footer-main-container">
-	<div class="span12">
+	<div class="large-12 columns">
 		<hr />
 	</div>
-	<div class="span12 row-fluid footer-container-one" style="margin-left:0">
+	<div class="large-12 columns row-fluid footer-container-one" style="margin-left:0">
 		<div class="span3">
 			&nbsp;
 		</div>
@@ -16,7 +16,7 @@
 
 	</div>
 	
-	<div class="span12" style="margin-left:0">
+	<div class="large-12 columns" style="margin-left:0">
 		<div class="span3" style="font-size:13px">
 			<h5>Quick Information</h5>
 			<a href="">Creating your registry</a><br />

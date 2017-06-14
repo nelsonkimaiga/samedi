@@ -28,9 +28,9 @@ include(local_url.'templates/script-tags.php');
 ?>
 <!--End top nav-->
 <div class="body-content account-page row-fluid">
-	<div class="span12 lowerContent">
+	<div class="large-12 columns lowerContent">
 		<div class="row-fluid">
-			<div class="span12 row-fluid" style="height:50px; background:url('../../../img/cloud-background.jpg')">
+			<div class="large-12 columns row-fluid" style="height:50px; background:url('../../../img/cloud-background.jpg')">
 				&nbsp;
 			</div>
 		  </div><br />
@@ -38,17 +38,17 @@ include(local_url.'templates/script-tags.php');
 	
 	<div class="innnerBodyContent" style="">
 		<div class="span1" style="width:auto">&nbsp;</div>
-		<div class="span11 row-fluid item-shop-container" style="margin-left:0.5%">
+		<div class="large-11 columns row-fluid item-shop-container" style="margin-left:0.5%">
 			<div class="span1 row-fluid">
 				
 			</div>
 			
-			<div class="span11 row-fluid item-shop-main" style="padding-top:10px; padding-left:10px;">
+			<div class="large-11 columns row-fluid item-shop-main" style="padding-top:10px; padding-left:10px;">
 				<?php
 					if($invitation->existingUser){
 				?>
-				<div class="span10 row-fluid" style="height:420px; width:100%; border:solid thin #000000; margin-left:0; padding:10px; background:url('../../../img/couple-banner.jpg'); background-size:cover">
-					<div class="span12 row-fluid">
+				<div class="large-10 columns row-fluid" style="height:420px; width:100%; border:solid thin #000000; margin-left:0; padding:10px; background:url('../../../img/couple-banner.jpg'); background-size:cover">
+					<div class="large-12 columns row-fluid">
 						<div class="span1">&nbsp;</div>
 						<div class="span3" style="font-size:40px; font-weight:bold; font-family: 'Playball', cursive; padding-top:20px; text-align:right">
 							<?php echo($invitation->brideInfo); ?>
@@ -62,7 +62,7 @@ include(local_url.'templates/script-tags.php');
 						</div>
 					</div>
 					
-					<div class="span12 row fluid">
+					<div class="large-12 columns row fluid">
 						<div class="image-banner-1 span4">
 							<?php
 								echo($invitation->processImages());
@@ -74,9 +74,9 @@ include(local_url.'templates/script-tags.php');
 						</div>
 					</div>
 					
-					<div class="span12 row fluid">
+					<div class="large-12 columns row fluid">
 						<div class="span4">&nbsp;</div>
-						<div class="span7"  style="font-size:18px ;font-family: 'Nunito', sans-serif; background:#FFFFFF; padding:3px">
+						<div class="large-7 columns"  style="font-size:18px ;font-family: 'Nunito', sans-serif; background:#FFFFFF; padding:3px">
 							Venue:&nbsp;&nbsp;<?php echo($invitation->weddingLocation); ?>
 						</div>
 					</div>
@@ -84,7 +84,7 @@ include(local_url.'templates/script-tags.php');
 				</div>
 				
 				<?php $invitation->getItems(); ?>
-				<div class="span11 row-fluid" style="margin-top:20px; margin-left:0; border-bottom:solid thick #999999; padding-top:20px">
+				<div class="large-11 columns row-fluid" style="margin-top:20px; margin-left:0; border-bottom:solid thick #999999; padding-top:20px">
 					<h4>Our Registry: <?php echo($invitation->itemsCount); ?> Item(s)</h4><br /><br />
 					<?php
 						echo($invitation->strHTMLContainer);
@@ -99,7 +99,7 @@ include(local_url.'templates/script-tags.php');
 						We seem not to recognize the registry. This can be a result of wrong information. Please check your invitation code.
 					</div>
 					<h4>Verify your invitation code</h4>
-					<div class="span7" style="margin-top:30px">
+					<div class="large-7 columns" style="margin-top:30px">
 					<form class="form-horizontal invite-form" action="../bin/invitation.processing.php" method="post">
 					  <input type="text" placeholder="Enter the Invitation Code" name="invitation_registry" id="invitation_registry" size="span4" />
 					  <button type="button" class="btn" onclick="INVITATION_JSMOD.validateInviteCode()">View Registry</button><br />

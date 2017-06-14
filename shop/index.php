@@ -22,11 +22,11 @@ include(local_url.'templates/script-tags.php');
 ?>
 <!--End top nav-->
 <div class="body-content account-page row-fluid">
-	<div class="span12 lowerContent">
+	<div class="large-12 columns lowerContent">
 		<div class="row-fluid">
-			<div class="span12 row-fluid" style="height:150px; background:url('../img/cloud-background.jpg')">
+			<div class="large-12 columns row-fluid" style="height:150px; background:url('../img/cloud-background.jpg')">
 				<div class="span3"></div>
-				<div class="span6 account-registry-image" style="margin-top:60px">Start shopping, Save more, smile more<br /><br />
+				<div class="large-6 columns account-registry-image" style="margin-top:60px">Start shopping, Save more, smile more<br /><br />
 				</div>
 			</div>
 		  </div><br />
@@ -34,23 +34,23 @@ include(local_url.'templates/script-tags.php');
 	
 	<div class="innnerBodyContent" style="margin-top:12%">
 		<div class="span1" style="width:auto">&nbsp;</div>
-		<div class="span11 row-fluid item-shop-container" style="margin-left:0.5%">
+		<div class="large-11 columns row-fluid item-shop-container" style="margin-left:0.5%">
 			<div class="span2 row-fluid">
 				<div style="padding-top:10px; text-align:center">Refine Your Product</div><br />
 			</div>
 			
-			<div class="span10 row-fluid item-shop-main" style="padding-top:10px; padding-left:10px;">
-				<div class="span10 page-links">
+			<div class="large-10 columns row-fluid item-shop-main" style="padding-top:10px; padding-left:10px;">
+				<div class="large-10 columns page-links">
 					<a href="javascript:void()">Hierachy 1</a>&nbsp;&raquo;&nbsp;
 					<a href="javascript:void()">Hierachy 2</a>&nbsp;&raquo;&nbsp;
 					<a href="javascript:void()">All</a>&nbsp;&raquo;&nbsp;
 					(Add by refine)
 				</div><br />
-				<div class="span10" style="height:150px; width:100%; border:solid thin #000000; margin-left:0">
+				<div class="large-10 columns" style="height:150px; width:100%; border:solid thin #000000; margin-left:0">
 					<div style="font-size:24px">Put the image of the item type E.g Electronics, Clothes etc</div>
 				</div>
 				
-				<div class="span10 row-fluid refine-container" style="height:80px; width:100%; margin-top:20px; margin-left:0; border-bottom:solid thick #999999; padding-top:20px">
+				<div class="large-10 columns row-fluid refine-container" style="height:80px; width:100%; margin-top:20px; margin-left:0; border-bottom:solid thick #999999; padding-top:20px">
 					<div class="span2">Refine</div>
 					<div class="span3">
 						        <div class="btn-group">
@@ -145,11 +145,11 @@ include(local_url.'templates/script-tags.php');
 							if($sqlVotes->rowCount()>0){
 								$voteRow = $sqlVotes->fetch(PDO::FETCH_ASSOC);
 								if($voteRow['vote']=='thumbs_up'){
-									$strVoteHTML = '<div class="span6"><img src="'.local_url.'img/thumbs-up.png"/>&nbsp;&nbsp;
+									$strVoteHTML = '<div class="large-6 columns"><img src="'.local_url.'img/thumbs-up.png"/>&nbsp;&nbsp;
 									'.($row['thumbs_up']).' + <span style="font-size:13px">Your Vote</span>&nbsp;</div><div class="span5"><img src="'.local_url.'img/thumbs-down.png"/>&nbsp;&nbsp;
 									'.$row['thumbs_down'].'</div>';
 								}else{
-									$strVoteHTML = '<div class="span6"><img src="'.local_url.'img/thumbs-up.png"/>&nbsp;&nbsp;
+									$strVoteHTML = '<div class="large-6 columns"><img src="'.local_url.'img/thumbs-up.png"/>&nbsp;&nbsp;
 									'.$row['thumbs_up'].'</div><div class="span5"><img src="'.local_url.'img/thumbs-down.png"/>&nbsp;&nbsp;
 									'.$row['thumbs_down'].'</div>';
 								}
@@ -169,7 +169,7 @@ include(local_url.'templates/script-tags.php');
 								<div class="item-image">
 									<a href="'.local_url.'shop/'.$row['page_url'].'"><img class="img-rounded" src="'.$_SESSION['page']['home_url'].'img/'.$row['image'].'" /></a>
 								</div><br />
-								<div class="span6 item-price" style="padding-top:10px">
+								<div class="large-6 columns item-price" style="padding-top:10px">
 									<sup>Ksh.</sup>'.$row['sale_price'].'<sup>00</sup>&nbsp;
 								</div>
 								'.$strSave.'
@@ -178,7 +178,7 @@ include(local_url.'templates/script-tags.php');
 									<a href="'.local_url.'shop/'.$row['page_url'].'">'.$str.'</a>
 								</div><br />
 								'.$strVoteHTML.'
-								<div class="row-fluid span12">
+								<div class="row-fluid large-12 columns">
 									'.$reviews.'
 								</div>
 							 </div>

@@ -91,7 +91,7 @@ private function appendToContainer($row){
 	}
 	$this->strDivHTML .=	$strDivHead.
 				'<div class="span5 row-fluid">
-					<img class="span6" src="'.$_SESSION['page']['home_url'].'img/registry/'.$this->activeRegistry.'/'.$imageURL.'" /><br />
+					<img class="large-6 columns" src="'.$_SESSION['page']['home_url'].'img/registry/'.$this->activeRegistry.'/'.$imageURL.'" /><br />
 				</div>
 				<div class="span5" style="margin-left:-10%">
 					<div style="background:#0078B3; opacity:0.7; color:#FFF; padding:10px">

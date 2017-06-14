@@ -21,7 +21,7 @@ include(local_url.'templates/script-tags.php');
 <!--End top nav-->
 <div class="body-content account-page row-fluid">
 	<div class="span2">&nbsp;</div>
-	<div class="innnerBodyContent span8 row-fluid" style="margin-top:5%;">
+	<div class="innnerBodyContent large-8 columns row-fluid" style="margin-top:5%;">
 		<div class="" align="center" style="font-size:30px;">
         	Creating A Gift Registry
        	</div><br>

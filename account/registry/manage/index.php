@@ -39,7 +39,7 @@ include($_SESSION['page']['home_url'].'templates/script-tags.php');
 			include(local_url.'account/bin/left-navbar.php');
 		?>
 	</div>
-	<div class="span8">
+	<div class="large-8 columns">
 		<div class="inline-heading">Manage your Registry</div><br />
 		<div>Need help, let's give you a <a href="javascript:void()">quick and informative tour</a>.</div><!--do not remove-->
 		<br />		
@@ -47,7 +47,7 @@ include($_SESSION['page']['home_url'].'templates/script-tags.php');
 		 
 		 //here will be a script calln a function  - no idea which
 		?>
-		<div class="row-fluid span12" style="margin-left:0; border-top:solid 3px #333333"><br />
+		<div class="row-fluid large-12 columns" style="margin-left:0; border-top:solid 3px #333333"><br />
 			<div class="items-heading-count">
 				<h4>
 					<span class="item-count"><?php echo($itemDetails->strItemsCount); ?></span>

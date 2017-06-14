@@ -22,9 +22,9 @@ include(local_url.'templates/script-tags.php');
 ?>
 <!--End top nav-->
 <div class="body-content account-page row-fluid">
-	<div class="span12 lowerContent">
+	<div class="large-12 columns lowerContent">
 		<div class="row-fluid">
-			<div class="span12 row-fluid" style="height:160px; background:url('../../img/cloud-background.jpg')">
+			<div class="large-12 columns row-fluid" style="height:160px; background:url('../../img/cloud-background.jpg')">
 				<div class="span2"></div>
 				<div class="span2" style="margin-top:25px">
 					<img src="../../img/wedding-rings-medium.png" />
@@ -51,14 +51,14 @@ include(local_url.'templates/script-tags.php');
 	
 	<div class="innnerBodyContent" style="margin-top:12%">
 		<div class="span1" style="width:auto">&nbsp;</div>
-		<div class="span11 row-fluid item-shop-container" style="margin-left:0.5%">
+		<div class="large-11 columns row-fluid item-shop-container" style="margin-left:0.5%">
 			<div class="span1 row-fluid">
 				
 			</div>
 			
-			<div class="span11 row-fluid item-shop-main" style="padding-top:10px; padding-left:10px;">
+			<div class="large-11 columns row-fluid item-shop-main" style="padding-top:10px; padding-left:10px;">
 				
-				<div class="span10" style="height:150px; width:100%; margin-left:0">
+				<div class="large-10 columns" style="height:150px; width:100%; margin-left:0">
 					<div style="font-size:24px">
 						<img class="span4" src="../../img/gift_vouchers.jpg" />
 						<img class="span4" src="../../img/kitchenware.jpg" />
@@ -69,7 +69,7 @@ include(local_url.'templates/script-tags.php');
 					</div><br />&nbsp;
 				</div>
 				
-				<div class="span10 row-fluid refine-container" style="height:80px; width:100%; margin-top:80px; margin-left:0; border-bottom:solid thick #999999; padding-top:20px">
+				<div class="large-10 columns row-fluid refine-container" style="height:80px; width:100%; margin-top:80px; margin-left:0; border-bottom:solid thick #999999; padding-top:20px">
 					<div class="span2">Refine</div>
 					<div class="span3">
 						        <div class="btn-group">
@@ -164,11 +164,11 @@ include(local_url.'templates/script-tags.php');
 							if($sqlVotes->rowCount()>0){
 								$voteRow = $sqlVotes->fetch(PDO::FETCH_ASSOC);
 								if($voteRow['vote']=='thumbs_up'){
-									$strVoteHTML = '<div class="span6"><img src="'.local_url.'img/thumbs-up.png"/>&nbsp;&nbsp;
+									$strVoteHTML = '<div class="large-6 columns"><img src="'.local_url.'img/thumbs-up.png"/>&nbsp;&nbsp;
 									'.($row['thumbs_up']).' + <span style="font-size:13px">Your Vote</span>&nbsp;</div><div class="span5"><img src="'.local_url.'img/thumbs-down.png"/>&nbsp;&nbsp;
 									'.$row['thumbs_down'].'</div>';
 								}else{
-									$strVoteHTML = '<div class="span6"><img src="'.local_url.'img/thumbs-up.png"/>&nbsp;&nbsp;
+									$strVoteHTML = '<div class="large-6 columns"><img src="'.local_url.'img/thumbs-up.png"/>&nbsp;&nbsp;
 									'.$row['thumbs_up'].'</div><div class="span5"><img src="'.local_url.'img/thumbs-down.png"/>&nbsp;&nbsp;
 									'.$row['thumbs_down'].'</div>';
 								}
@@ -188,7 +188,7 @@ include(local_url.'templates/script-tags.php');
 								<div class="item-image">
 									<a href="'.local_url.'shop/'.$row['page_url'].'"><img class="img-rounded" src="'.$_SESSION['page']['home_url'].'img/'.$row['image'].'" /></a>
 								</div><br />
-								<div class="span6 item-price" style="padding-top:10px">
+								<div class="large-6 columns item-price" style="padding-top:10px">
 									<sup>Ksh.</sup>'.$row['sale_price'].'<sup>00</sup>&nbsp;
 								</div>
 								'.$strSave.'
@@ -197,7 +197,7 @@ include(local_url.'templates/script-tags.php');
 									<a href="'.local_url.'shop/'.$row['page_url'].'">'.$str.'</a>
 								</div><br />
 								'.$strVoteHTML.'
-								<div class="row-fluid span12">
+								<div class="row-fluid large-12 columns">
 									'.$reviews.'
 								</div>
 							 </div>

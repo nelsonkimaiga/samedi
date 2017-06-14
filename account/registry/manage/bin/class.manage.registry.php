@@ -109,7 +109,7 @@ private function appendToContainer($details, $itemCode, $itemQuantity){
 					<div class="row-fluid">
 						<div class="span2">Change Quantity</div>
 						<div class="span1">&nbsp;</div>
-						<div class="span7">
+						<div class="large-7 columns">
 							<select class="input-small item-set-quantity-'.$itemCode.'" onchange="javascript:REGISTRYMOD.modifyQuantity('.$itemCode.','.$castPrice.')">
 								'.$quantityHTML.'
 							</select>

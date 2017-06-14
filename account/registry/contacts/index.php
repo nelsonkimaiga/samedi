@@ -38,12 +38,12 @@ include($_SESSION['page']['home_url'].'templates/script-tags.php');
 			include(local_url.'account/bin/left-navbar.php');
 		?>
 	</div>
-	<div class="span8">
+	<div class="large-8 columns">
 		<div class="inline-heading">Manage your Registry Contacts</div><br />
 		<div>Need help, let's give you a <a href="javascript:void()">quick and informative tour</a>.</div><!--do not remove-->
 		<br />		
 		
-		<div class="row-fluid span12" style="margin-left:0; border-top:solid 3px #333333"><br />
+		<div class="row-fluid large-12 columns" style="margin-left:0; border-top:solid 3px #333333"><br />
 			<div class="add-contact">
 				<form class="form-horizontal">
 					<div class="control-group">
@@ -54,7 +54,7 @@ include($_SESSION['page']['home_url'].'templates/script-tags.php');
 					 </div>
 				    <div class="control-group input-prepend input-append">
 					  <span class="add-on">+254</span>
-					  	<input class="span8" id="inputNumber" placeholder="E.g 700111222" type="text">
+					  	<input class="large-8 columns" id="inputNumber" placeholder="E.g 700111222" type="text">
 					  <button class="btn" type="button" onclick="REGISTRY_CONTACTS.verifyContact()">Add Contact</button>
 					</div>
 					<div class="alert"></div>
@@ -120,8 +120,8 @@ include($_SESSION['page']['home_url'].'templates/script-tags.php');
 			
 			?>
 			<div class="contact-list row-fluid" style="font-size:15px">
-			<div class="contact-list-alert alert span12" style="display:none"></div>
-			<div class="span12"><h5><?php echo($countContacts);?> Contact(s)</h5></div>
+			<div class="contact-list-alert alert large-12 columns" style="display:none"></div>
+			<div class="large-12 columns"><h5><?php echo($countContacts);?> Contact(s)</h5></div>
 				<?php
 					echo($strContacts);
 				?>

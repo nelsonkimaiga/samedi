@@ -81,11 +81,11 @@ $body = '
 $strTopNav
 .'
 <div class="body-content account-page row-fluid">
-	<div class="span12 lowerContent">
+	<div class="large-12 columns lowerContent">
 		<div class="row-fluid">
-			<div class="span12 row-fluid" style="height:150px; background:url(\'../../img/cloud-background.jpg\')">
+			<div class="large-12 columns row-fluid" style="height:150px; background:url(\'../../img/cloud-background.jpg\')">
 				<div class="span3"></div>
-				<div class="span6 account-registry-image" style="margin-top:60px">Start shopping, Save more, smile more<br /><br />
+				<div class="large-6 columns account-registry-image" style="margin-top:60px">Start shopping, Save more, smile more<br /><br />
 				</div>
 			</div>
 		  </div><br />
@@ -93,14 +93,14 @@ $strTopNav
 	
 <div class="innnerBodyContent" style="margin-top:12%">
 		<div class="span1" style="width:auto">&nbsp;</div>
-		<div class="span11 row-fluid item-shop-container" style="margin-left:2%">
-			<div class="span12 row-fluid item-shop-main" style="padding-top:10px; padding-left:10px;">
-				<div class="span12 page-links">
+		<div class="large-11 columns row-fluid item-shop-container" style="margin-left:2%">
+			<div class="large-12 columns row-fluid item-shop-main" style="padding-top:10px; padding-left:10px;">
+				<div class="large-12 columns page-links">
 					'.$hierachyLinks.'
 				</div><br />				
-				<div class="span12 row-fluid" style="margin-left:0; margin-top:20px">
-					<div class="item-heading span12 row-fluid">
-						<div class="span6">
+				<div class="large-12 columns row-fluid" style="margin-left:0; margin-top:20px">
+					<div class="item-heading large-12 columns row-fluid">
+						<div class="large-6 columns">
 							<div class="item-title">'.$itemData['abstract'].'</div>
 							<div class="item-heading-sub">by <a href="javascript:void()">'.$itemData['manufacturer'].'</a></div>
 							<div class="row-fluid item-heading-sub" style="margin-left:0; margin-top:10px">
@@ -117,14 +117,14 @@ $strTopNav
 					</div>
 				</div><br />
 				<div class="span1">&nbsp;</div>
-				<div class="span6 row-fluid item-display" style="margin-left:0; margin-top:3%;">
+				<div class="large-6 columns row-fluid item-display" style="margin-left:0; margin-top:3%;">
 					<div class="item-image">
 						<img class="img-rounded" src="../../img/'.$itemData['image'].'" />
 					</div><br />
 				</div>
 				
 				<div class="span5 item-shop-container row-fluid" style="margin-top:3%; background:#F0F0FF;">
-					<div class="span12">
+					<div class="large-12 columns">
 						<div class="item-shop-price">
 						<sup>Ksh.</sup>'.$itemData['sale_price'].'<sup>00</sup>&nbsp;
 						</div>
@@ -132,7 +132,7 @@ $strTopNav
 							'.$strSave.'
 						</div>
 					</div><br /><br />
-					<div class="span12 row-fluid" style="margin-left:0; margin-top:5%">
+					<div class="large-12 columns row-fluid" style="margin-left:0; margin-top:5%">
 						<div class="span2">Quantity</div>
 						<div class="span4">
 							<select class="input-small" name="selectQuantity" id="itemQuantity">
@@ -142,15 +142,15 @@ $strTopNav
 						<div class="span1">&nbsp;</div>
 						<div class="span5 add-to-cart" style=""><button class="btn btn-warning" style="padding:5px 35px">Add to Cart</button></div>
 					</div>
-					<div class="span12" style="margin-top:30px">
-						<div class="span6 add-to-registry">
+					<div class="large-12 columns" style="margin-top:30px">
+						<div class="large-6 columns add-to-registry">
 							<button class="btn" style="padding:5px 35px" onclick="javascript:SHOP.addToRegistry('.$itemData['item_code'].',\'Registry\')">Add to Registry</button>
 						</div>
-						<div class="span6 add-to-wishlist">
+						<div class="large-6 columns add-to-wishlist">
 							<button class="btn" style="padding:5px 35px">Add to Wishlist</button>
 						</div>
 					</div>
-					<div class="span12" style="margin-top:30px">
+					<div class="large-12 columns" style="margin-top:30px">
 						<div class="item-shop-store">
 							Sold by <a href="'.$var_url.'store/'.strtolower($itemData['store_name']).'/">'.$itemData['store_name'].'</a>
 						</div><br />
@@ -159,7 +159,7 @@ $strTopNav
 							If <span class="spn-heading">Added to Cart</span>, you will select and specify your preferred mode of delivery. If <span class="spn-heading">Added to Registry</span>, edit your delivery option in your profile settings.
 						</div>
 					</div><br />
-					<div class="span12" style="margin-top:30px">
+					<div class="large-12 columns" style="margin-top:30px">
 						<div class="inner-heading">Product Specifications</div>
 						<div>			
 							'.$itemData['specification'].'
@@ -168,7 +168,7 @@ $strTopNav
 					</div>
 				</div>
 				
-			<div class="span12 item-shop-product-descrption">
+			<div class="large-12 columns item-shop-product-descrption">
 			<a name="product-description"></a>
 				<div class="item-heading">Product Description</div><br />
 				'.$itemData['description'].'
@@ -177,15 +177,15 @@ $strTopNav
 				   '.$itemData['specification'].'
 				
 			</div>
-			<div class="span12 item-shop-other-items" style="margin-top:5%">
+			<div class="large-12 columns item-shop-other-items" style="margin-top:5%">
 				<div class="item-heading">Customers who bought this item also bought these items</div><br />
 			</div>
 			
-			<div class="span12 item-shop-other-items" style="margin-top:5%">
+			<div class="large-12 columns item-shop-other-items" style="margin-top:5%">
 				<div class="item-heading">Customers\' Reviews</div><br />
 			</div>
 			
-			<div class="span8 item-shop-other-items" style="margin-top:5%">
+			<div class="large-8 columns item-shop-other-items" style="margin-top:5%">
 				<div class="item-heading">Product Policy</div><br />
 				<div class="inner-heading">Warranty Plan</div>
 				'.$itemData['pricing_policy'].'<br /><br />
