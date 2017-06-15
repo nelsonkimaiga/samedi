@@ -15,10 +15,10 @@ $_SESSION['page']['home_url'] = '../../../';
 
 
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Samedi: Registry Contacts</title>
 <?php
 include($_SESSION['page']['home_url'].'templates/script-tags.php');
@@ -32,8 +32,8 @@ include($_SESSION['page']['home_url'].'templates/script-tags.php');
 ?>
 <!--End top nav-->
 <div class="body-content account-page row-fluid" style="margin-top:100px;">
-	<div class="span1">&nbsp;</div>
-	<div class="span2 leftNavbar-container">
+	<div class="large-1 columns">&nbsp;</div>
+	<div class="large-2 columns leftNavbar-container">
 		<?php
 			include(local_url.'account/bin/left-navbar.php');
 		?>
@@ -84,16 +84,16 @@ include($_SESSION['page']['home_url'].'templates/script-tags.php');
 									if($arrSub[0]!=''){
 										$strContacts .= '
 										<div class="contact contact-'.$i.' row-fluid">
-											<div class="span2 contact-name">
+											<div class="large-2 columns contact-name">
 												'.$arrSub[0].'
 											</div>
-											<div class="span2 contact-number">
+											<div class="large-2 columns contact-number">
 												'.$arrSub[1].'
 											</div>
-											<div class="span1">
+											<div class="large-1 columns">
 												<button type="button" class="close" aria-hidden="true" title="Edit this contact" onclick="REGISTRY_CONTACTS.editContactLoad('.$i.')"><i class=" icon-edit"></i></button>
 											</div>
-											<div class="span1" style="margin-left:0">
+											<div class="large-1 columns" style="margin-left:0">
 												<button type="button" class="close" aria-hidden="true" title="remove this contact" onclick="REGISTRY_CONTACTS.deleteContact('.$i.')"><i class=" icon-trash"></i></button>
 											</div>
 											<input type="hidden" value="'.$arrSub[0].'" id="curName_'.$i.'" />
@@ -194,7 +194,7 @@ include($_SESSION['page']['home_url'].'templates/script-tags.php');
     </div>
 	
 	<div class="footer-container-end">
-		<div class="span1" style="width:1%">
+		<div class="large-1 columns" style="width:1%">
 			&nbsp;
 		</div>
 		&copy;&nbsp;&nbsp;Samedi Registry Co.&nbsp;

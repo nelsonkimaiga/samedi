@@ -2,7 +2,7 @@
 var SHOP = {
 	addToRegistry:function(itemCode,category_org){
 		//replace div
-		$('.add-to-registry').html('<img class="span3" src="http://samedi.co.ke/dev/ripple.gif" />&nbsp;&nbsp;Adding ...');
+		$('.add-to-registry').html('<img class="large-3 columns" src="http://samedi.co.ke/dev/ripple.gif" />&nbsp;&nbsp;Adding ...');
 		category = category_org.toLowerCase();
 		$.ajax({
 			   	url:"../../shop/bin/items.registry.db.php",

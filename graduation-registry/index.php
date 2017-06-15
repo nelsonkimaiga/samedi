@@ -14,11 +14,16 @@ define('local_url', '../');
         <meta name="description" content="A Kenyan Gift Registry for all your events including; Wedding, Baby Shower, Birthday Party Graduation or any other events.">
         <meta name="keywords" content="Wedding gifts registry, gift registry, baby shower gifts registry, baby shower gift registry, graduation gifts registry, kenyan gift registry, birthday party events, registry gifts, wedding registry, baby shower registry, graduation registry, birthday party gifts registry">
         <title>Samedi: Graduation Registry</title>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+        <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet"-->-->
+
         <!--fonts-->
         <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
         <!--font-awesome-->
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--foundation zurb-->
+<link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation.css' type="text/css">
+        <!--fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
         <?php
         include(local_url . 'templates/script-tags.php');
         ?>

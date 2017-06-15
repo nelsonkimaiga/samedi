@@ -1,3 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/yQiAaD56cjx1AooMTSghGfY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
+
 html, body{
     font-family: 'Raleway', serif;
 }
@@ -161,9 +182,9 @@ Large desktops
     .button-link{font-size:16px; font-weight:bold; color:#F97C00;}
     .btnLink-white{color:#ffffff;}
 
-    .inline-links .span1:first-child, .exline-links .span1, .down-links .span1{width:0px} <!--Change to auto-->
-    .exline-links .span5{width:35.9%}
-    .down-links .span4{width:30%; margin-left:2.4%}
+    .inline-links .large-1 columns:first-child, .exline-links .large-1 columns, .down-links .large-1 columns{width:0px} <!--Change to auto-->
+    .exline-links .large-5 columns{width:35.9%}
+    .down-links .large-4 columns{width:30%; margin-left:2.4%}
     #shopping-cart div:hover{opacity:0.7; cursor:pointer}
     #shopping-cart_fixed div:hover{opacity:0.7; cursor:pointer}
     .all-products-container,.all-products-container-fixed{
@@ -333,22 +354,22 @@ Landscape phone to portrait tablet
 @media (max-width: 766px){
 
     #topnav-logo{margin-left:10px; margin-top:1%;}
-    #topnav-logo .span4{width:40%; float:left; border:solid thin #000}
+    #topnav-logo .large-4 columns{width:40%; float:left; border:solid thin #000}
     #topnav-search-quickLinks{display:none;}
     #topnav-logo div{display:inline-block}
     .logo-caption-container{ border:solid thin #000; width:55%}
     .logo-caption{font-family: 'Raleway', serif; font-size:24px; color:#FFF}
     <!--Overreide responsive .css -->
-    .span1{}
+    .large-1 columns{}
 
-    .span2{}
+    .large-2 columns{}
 
-    #topnav-logo .span3{
+    #topnav-logo .large-3 columns{
         width:auto;
         display:inline;
     }
-    .span4{}
-    .span5{}
+    .large-4 columns{}
+    .large-5 columns{}
 
     #topnav-logo .large-6 columns{
         width:auto;
@@ -377,7 +398,7 @@ Landscape phone to portrait tablet
     #topnav-help-cart{padding-left:3%}
     #shopping-cart{padding-top:4%;}
 
-    #shopping-cart .span5{
+    #shopping-cart .large-5 columns{
         margin-left:10%;
         width:50%;
         height:auto;
@@ -420,16 +441,16 @@ Landscape phone to portrait tablet
     #brand-container{}
     #stores-container,#shipping-container{margin-top:5%}
 
-    #brand-container .span3,
+    #brand-container .large-3 columns,
     #brand-container .large-9 columns,
-    #stores-container .span3,
+    #stores-container .large-3 columns,
     #stores-container .large-9 columns,
-    #shipping-container .span3,
+    #shipping-container .large-3 columns,
     #shipping-container .large-9 columns{display:inline-block}
 
-    #brand-container .span3,
-    #stores-container .span3,
-    #shipping-container .span3{width:20%}
+    #brand-container .large-3 columns,
+    #stores-container .large-3 columns,
+    #shipping-container .large-3 columns{width:20%}
 
     #brand-container .large-9 columns,
     #stores-container .large-9 columns,

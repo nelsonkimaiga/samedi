@@ -9,14 +9,18 @@ unset($_SESSION['account']['refName'], $_SESSION['account']['refEmail'], $_SESSI
 <!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Samedi: Sign In</title>
         <!--foundation zurb-->
         <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation.css' type="text/css">
         <!--fonts-->
         <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
         <!--font-awesome-->
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--foundation zurb-->
+<link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation.css' type="text/css">
+        <!--fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
         <?php
         include($_SESSION['page']['home_url'] . 'templates/script-tags.php');
         ?>

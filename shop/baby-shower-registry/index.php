@@ -5,10 +5,10 @@ $_SESSION['page']['home_url'] = '../../';
 define('local_url','../../');
 
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Samedi: Registry</title>
 <?php
 include(local_url.'templates/script-tags.php');
@@ -25,16 +25,16 @@ include(local_url.'templates/script-tags.php');
 	<div class="large-12 columns lowerContent">
 		<div class="row-fluid">
 			<div class="large-12 columns row-fluid" style="height:160px; background:url('../../img/cloud-background.jpg')">
-				<div class="span2"></div>
-				<div class="span2" style="margin-top:25px">
+				<div class="large-2 columns"></div>
+				<div class="large-2 columns" style="margin-top:25px">
 					<img src="../../img/baby-cart-medium.png" />
 				</div>
-				<div class="span5 account-registry-image" style="margin-top:100px; margin-left:0;">A gift for the new arrival.<br /><br />
+				<div class="large-5 columns account-registry-image" style="margin-top:100px; margin-left:0;">A gift for the new arrival.<br /><br />
 				</div>
-				<div class="span3" style="margin-top:100px;">
+				<div class="large-3 columns" style="margin-top:100px;">
 					<div class="input-append" style="height:25px">
 						<form class="form-horizontal invite-form" action="bin/invitation.processing.php" method="post">
-						  <input type="text" placeholder="Enter the Invitation Code" name="invitation_registry" id="invitation_registry" size="span4" />
+						  <input type="text" placeholder="Enter the Invitation Code" name="invitation_registry" id="invitation_registry" size="large-4 columns" />
 						  <button type="button" class="btn" onclick="INVITATION_JSMOD.validateInviteCode()">View Registry</button><br />
 						</form>
 					</div>
@@ -50,9 +50,9 @@ include(local_url.'templates/script-tags.php');
 	</div><!--lowerContent-->
 	
 	<div class="innnerBodyContent" style="margin-top:12%">
-		<div class="span1" style="width:auto">&nbsp;</div>
+		<div class="large-1 columns" style="width:auto">&nbsp;</div>
 		<div class="large-11 columns row-fluid item-shop-container" style="margin-left:0.5%">
-			<div class="span1 row-fluid">
+			<div class="large-1 columns row-fluid">
 				
 			</div>
 			
@@ -60,9 +60,9 @@ include(local_url.'templates/script-tags.php');
 				
 				<div class="large-10 columns" style="height:150px; width:100%; margin-left:0">
 					<div style="font-size:24px">
-						<img class="span4" src="../../img/shower.jpg" />
-						<img class="span4" src="../../img/gift_vouchers.jpg" />
-						<img class="span4" src="../../img/babyshower.jpg" />
+						<img class="large-4 columns" src="../../img/shower.jpg" />
+						<img class="large-4 columns" src="../../img/gift_vouchers.jpg" />
+						<img class="large-4 columns" src="../../img/babyshower.jpg" />
 					</div><br />
 					<div style="font-family:Cambria; font-size:18px; font-weight:bold" align="center">
 						Select the best and the biggest deals of items for your registry.
@@ -70,8 +70,8 @@ include(local_url.'templates/script-tags.php');
 				</div>
 				
 				<div class="large-10 columns row-fluid refine-container" style="height:80px; width:100%; margin-top:80px; margin-left:0; border-bottom:solid thick #999999; padding-top:20px">
-					<div class="span2">Refine</div>
-					<div class="span3">
+					<div class="large-2 columns">Refine</div>
+					<div class="large-3 columns">
 						        <div class="btn-group">
 								  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" style="width:150px">
 									Price (Ksh.)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -87,7 +87,7 @@ include(local_url.'templates/script-tags.php');
 								  </ul>
 								</div>
 					</div>
-					<div class="span3">
+					<div class="large-3 columns">
 								 <div class="btn-group">
 								  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" style="width:150px">
 									Orders&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -101,7 +101,7 @@ include(local_url.'templates/script-tags.php');
 								  </ul>
 								</div>
 					</div>
-					<div class="span3">
+					<div class="large-3 columns">
 								<div class="btn-group">
 								  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" style="width:150px">
 									Date Added&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -167,7 +167,7 @@ include(local_url.'templates/script-tags.php');
 	  ?>
         <p>
 			Thank You for your vote. Please write us a review<br /><br />
-			<textarea id="review" rows="4" placeholder="Write your review ..." class="span4"></textarea>
+			<textarea id="review" rows="4" placeholder="Write your review ..." class="large-4 columns"></textarea>
 		</p>
       </div>
       <div class="modal-footer">

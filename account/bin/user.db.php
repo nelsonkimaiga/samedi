@@ -14,9 +14,9 @@ public $dbLog;
 function __construct($database){
 
 	$this->DB_HOST = "localhost";
-	$this->DB_NAME = $database;
+	$this->DB_NAME = "samedico_samedi";
 	$this->DB_USER = "root"; //root --localhost ---cgcadmin1
-	$this->DB_PASSWORD = "shadowNet0080";
+	$this->DB_PASSWORD = "303seminarian";
 	$this->setFileParams();
 	$this->DB_CONNECT();
 	

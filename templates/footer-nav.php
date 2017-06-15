@@ -29,7 +29,7 @@
     </div>
 
     <div class="large-12 columns" style="margin-left:0">
-        <div class="span1" style="width:1%">
+        <div class="large-1 columns" style="width:1%">
             &nbsp;
         </div>
         <div class="large-5 columns" style="font-size:13px" align="center">

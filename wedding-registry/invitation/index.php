@@ -15,10 +15,10 @@ if(isset($_SESSION['registry']['invitation_code']) and $_SESSION['registry']['in
 	$invitationPublicReg->getPublicRegistries();
 }
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Samedi: Registry</title>
 <?php
 include(local_url.'templates/script-tags.php');
@@ -35,16 +35,16 @@ include(local_url.'templates/script-tags.php');
 	<div class="large-12 columns lowerContent">
 		<div class="row-fluid">
 			<div class="large-12 columns row-fluid" style="height:100px; background:url('../../../img/cloud-background.jpg')">
-				<div class="span2">
+				<div class="large-2 columns">
 					&nbsp;
 				</div>
-				<div class="span3" style="margin-top:30px;line-height:1.2">
+				<div class="large-3 columns" style="margin-top:30px;line-height:1.2">
 					<strong style="font-size:25px">Find a perfect gift,</strong><br />
 					<span style="font-size:16px">For the Perfect couple</span>
 				</div>
 				<div class="large-7 columns" style="margin-top:30px">
 					<form class="form-horizontal invite-form" action="../bin/invitation.processing.php" method="post">
-					  <input type="text" placeholder="Enter the Invitation Code" name="invitation_registry" id="invitation_registry" size="span4" />
+					  <input type="text" placeholder="Enter the Invitation Code" name="invitation_registry" id="invitation_registry" size="large-4 columns" />
 					  <button type="button" class="btn" onclick="INVITATION_JSMOD.validateInviteCode()">View Registry</button><br />
 					</form>
 					<div class="alert alert-warning invitation-alert" style="position:relative; z-index:20; display:none">
@@ -60,10 +60,10 @@ include(local_url.'templates/script-tags.php');
 	
 	<div class="innnerBodyContent publicRegDisplay row-fluid" id="publicRegDisplay" style="line-height:2.0">
 		<div class="row-fluid" style="border-bottom:solid #CCCCCC; font-size:18px; font-family:Calibri">
-			<div class="span1">
+			<div class="large-1 columns">
 				&nbsp;
 			</div>
-			<div class="span5">
+			<div class="large-5 columns">
 				(<?php
 					echo($invitationPublicReg->publicRegCount);
 				?> Registries Found)

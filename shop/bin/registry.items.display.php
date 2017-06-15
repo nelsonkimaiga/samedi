@@ -10,7 +10,7 @@ try{
 		  while($row = $sqlQuery->fetch(PDO::FETCH_ASSOC)){
 			if($row['original_price']>$row['sale_price']){
 				$strSave = '
-						<div class="span5" style="margin-top:5px; font-family:Calibri; font-size:12px">
+						<div class="large-5 columns" style="margin-top:5px; font-family:Calibri; font-size:12px">
 							Was <span style="text-decoration:line-through">Ksh. '.$row['original_price'].'</span><br />
 							Save Ksh. '.substractCash($row['original_price'],$row['sale_price']).'
 						</div>
@@ -23,11 +23,11 @@ try{
 					$str = $str.'<br />';
 				 }
 			$strVoteHTML = '
-				<div class="span5">
+				<div class="large-5 columns">
 					<img src="'.local_url.'img/thumbs-up.png" onclick="product.review(\'thumbs_up\','.$row['item_code'].')" />&nbsp;&nbsp;
 						'.$row['thumbs_up'].'
 					</div>
-				<div class="span5">
+				<div class="large-5 columns">
 					<img src="'.local_url.'img/thumbs-down.png" onclick="product.review(\'thumbs_down\','.$row['item_code'].')"/>&nbsp;&nbsp;
 						'.$row['thumbs_down'].'
 					</div>
@@ -41,11 +41,11 @@ try{
 					$voteRow = $sqlVotes->fetch(PDO::FETCH_ASSOC);
 					if($voteRow['vote']=='thumbs_up'){
 						$strVoteHTML = '<div class="large-6 columns"><img src="'.local_url.'img/thumbs-up.png"/>&nbsp;&nbsp;
-						'.($row['thumbs_up']).' + <span style="font-size:13px">Your Vote</span>&nbsp;</div><div class="span5"><img src="'.local_url.'img/thumbs-down.png"/>&nbsp;&nbsp;
+						'.($row['thumbs_up']).' + <span style="font-size:13px">Your Vote</span>&nbsp;</div><div class="large-5 columns"><img src="'.local_url.'img/thumbs-down.png"/>&nbsp;&nbsp;
 						'.$row['thumbs_down'].'</div>';
 					}else{
 						$strVoteHTML = '<div class="large-6 columns"><img src="'.local_url.'img/thumbs-up.png"/>&nbsp;&nbsp;
-						'.$row['thumbs_up'].'</div><div class="span5"><img src="'.local_url.'img/thumbs-down.png"/>&nbsp;&nbsp;
+						'.$row['thumbs_up'].'</div><div class="large-5 columns"><img src="'.local_url.'img/thumbs-down.png"/>&nbsp;&nbsp;
 						'.$row['thumbs_down'].'</div>';
 					}
 				}
@@ -55,9 +55,9 @@ try{
 			$reviews = $sqlReviews->rowCount().' Reviews';
 			$count ++;
 			if($count%4==0 || $count==1){
-				$strContainer = '<div class="span3" style="margin-left:0; margin-top:10px;">';
+				$strContainer = '<div class="large-3 columns" style="margin-left:0; margin-top:10px;">';
 			 }else{
-			   $strContainer = '<div class="span3">';
+			   $strContainer = '<div class="large-3 columns">';
 			   }	 
 				$ITEMS_DISPLAY .= $strContainer.'
 					<div class="item-image">

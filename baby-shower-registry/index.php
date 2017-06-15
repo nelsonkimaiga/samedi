@@ -6,9 +6,9 @@ define('local_url','../');
 
 ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html class="no-js" lang="en" dir="ltr">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="title" content="Kenyas first Wedding Gift Registry. Don&apos;t just get gifts, get the gifts you desire.">
 <meta name="description" content="A Kenyan Gift Registry for all your events including; Wedding, Baby Shower, Birthday Party Graduation or any other events.">
 <meta name="keywords" content="Wedding gifts registry, gift registry, baby shower gifts registry, baby shower gift registry, graduation gifts registry, kenyan gift registry, birthday party events, registry gifts, wedding registry, baby shower registry, graduation registry, birthday party gifts registry">
@@ -32,7 +32,7 @@ include(local_url.'templates/script-tags.php');
                 <div class="large-7 columns">
                 	&nbsp;
                 </div>
-                <div class="span5" style="margin-top:70px">
+                <div class="large-5 columns" style="margin-top:70px">
                     <div class="large-12 columns account-registry-image" style="font-size:40px;">
                         Baby Shower Registry<br /><br />
                     </div><br /><br />

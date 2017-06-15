@@ -5,14 +5,14 @@ $_SESSION['account']['memberAccess'] = $memberAccess;
 
   if(!$memberAccess){
 		$memberContainer = '
-			<div style="color:#FFC120" class="span5">Hello, <a href="'.$_SESSION["page"]["home_url"].'account/login/" style="color:#FFC120">Sign In</a> <span style="color:#000000">or</span><br />
+			<div style="color:#FFC120" class="large-5 columns">Hello, <a href="'.$_SESSION["page"]["home_url"].'account/login/" style="color:#FFC120">Sign In</a> <span style="color:#000000">or</span><br />
 			<a href="'.$_SESSION["page"]["home_url"].'account/signup/"><span style="color:#FFFFFF; font-weight:bold">Create a new account</span></a>
 			</div>
 		';
   }else{
 		$memberContainer = '
 			<a href="'.$_SESSION["page"]["home_url"].'account/" style="color:#FFC120" class="topNavLinkAcc">
-				<div style="color:#FFC120; overflow:hidden" class="span5">Hello, '.$_SESSION['account']['refName'].'<br />
+				<div style="color:#FFC120; overflow:hidden" class="large-5 columns">Hello, '.$_SESSION['account']['refName'].'<br />
 				<div style="color:#FFFFFF; font-weight:bold; width:100%; overflow:hidden;">email</div>
 				</div>
 			</a>
@@ -41,11 +41,11 @@ if($memberAccess){
 
 $strTOPNAV = '
 <div class="row-fluid topnav" style="">
-<div class="span1" id="topnav-logo">
+<div class="large-1 columns" id="topnav-logo">
 	<div class="row-fluid">
 		<div align="center" class="large-12 columns">
 			<a href="'.$_SESSION["page"]["home_url"].'">
-				<div class="span3 logo-char-container" style="font-size:24px">
+				<div class="large-3 columns logo-char-container" style="font-size:24px">
 					S
 				</div>
 				<div class="large-9 columns logo-line-container" style="font-size:18px;">
@@ -65,7 +65,7 @@ $strTOPNAV = '
 		</div>
 		<div>
 			<form class="form-search">
-			  <div class="span1">&nbsp;</div>
+			  <div class="large-1 columns">&nbsp;</div>
 			  <div class="input-append large-10 columns">
 				<input type="text" class="large-12 columns search-query" id="search-query">
 				<button type="submit" class="btn btn-warning btn-search">Search</button>
@@ -74,12 +74,12 @@ $strTOPNAV = '
 		</div>
 	</div>
 </div>
-<div style="margin-left:5%" class="span3" id="topnav-help-cart">
+<div style="margin-left:5%" class="large-3 columns" id="topnav-help-cart">
 	<div class="row-fluid">
 		<div align="right" style="margin-right:10px;"><i class="icon-question-sign icon-white"></i>&nbsp;Help</div><br />
 		'.$memberContainer.'
 		<div class="large-6 columns row-fluid" id="shopping-cart">
-		  <div class="span5" title="Cart">
+		  <div class="large-5 columns" title="Cart">
 		  <a href="'.$_SESSION["page"]["home_url"].'shop/cart/" style="color:#FFFFFF">
 			<img src="'.$_SESSION["page"]["home_url"].'img/shoping_cart-img.png" height="30" width="30" id="shopping-cart-img" />
 			(<span class="cart-count">
@@ -87,7 +87,7 @@ $strTOPNAV = '
 			</span>)
 			</a>
 		  </div>
-		  <div class="span5" title="Registry">
+		  <div class="large-5 columns" title="Registry">
 		  <a href="'.$_SESSION["page"]["home_url"].'account/registry/manage/" style="color:#FFFFFF">
 			<img src="'.$_SESSION["page"]["home_url"].'img/check_list-48.png" height="30" width="30" id="shopping-cart-img" />
 			(<span class="registry-count">
@@ -102,20 +102,20 @@ $strTOPNAV = '
 </div>
 <div style="width:100%; height:40px; z-index:10; position:absolute;" class="row-fluid appending-topnav">
 
-	<a href="'.$_SESSION["page"]["home_url"].'shop/wedding-registry/"><div class="span3" id="registryMenuWedding" style="width:20%">
+	<a href="'.$_SESSION["page"]["home_url"].'shop/wedding-registry/"><div class="large-3 columns" id="registryMenuWedding" style="width:20%">
 		<img src="'.$_SESSION["page"]["home_url"].'img/icons/wedding-rings.png"/>
 		&nbsp;&nbsp;Wedding Gift Registry
 	</div></a>
-	<a href="javascript:void()"><div class="span3" id="registryMenuBaby">
+	<a href="javascript:void()"><div class="large-3 columns" id="registryMenuBaby">
 		<img src="'.$_SESSION["page"]["home_url"].'img/icons/baby-cart.png"/>
 		&nbsp;&nbsp;Baby Shower Gift Registry</div></a>
-	<a href="javascript:void()"><div class="span3" id="registryMenuGraduation">
+	<a href="javascript:void()"><div class="large-3 columns" id="registryMenuGraduation">
 		<img src="'.$_SESSION["page"]["home_url"].'img/icons/graduation.png"/>
 		&nbsp;&nbsp;Graduation Gift Registry</div></a>
-	<a href="javascript:void()"><div class="span2" id="registryMenuOther">
+	<a href="javascript:void()"><div class="large-2 columns" id="registryMenuOther">
 		<img src="'.$_SESSION["page"]["home_url"].'img/icons/gift.png"/>
 		&nbsp;&nbsp;Other</div></a>
-	<div class="span2" id="registryMenuShop">
+	<div class="large-2 columns" id="registryMenuShop">
 		<div style="margin-left:0px; font-weight:bold; color:#FFC120" class="button-link all-products">Registry Shopping&nbsp;<i class="icon-chevron-down icon-white" style="margin-top:2px"></i></div>
 <!--All products--loaded via javascript-->
 		<div class="all-products-container">

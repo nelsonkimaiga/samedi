@@ -37,7 +37,7 @@ $_SESSION['page']['home_url'] = '../../';
         <!--End top nav-->
         <div class="body-content account-page row" style="margin-top:100px;">
             <div class="large-2 columns">&nbsp;</div>
-            <div class="large-9 columns">
+            <div class="large-9 large-centered columns">
                 <div class="inline-heading">Create A New Gift Registry</div><br />
                 <br />
                 <div class="row">
@@ -50,6 +50,7 @@ $_SESSION['page']['home_url'] = '../../';
                             </div>
                         </div>
                     </a>
+                    <hr>
                     <a href="<?= $_SESSION['page']['home_url'] ?>account/babyshower-registry/">
                         <div class="large-6 columns row" style="height:130px; background:#88C4FF; margin-left:10px">
                             <div class="large-5 columns"><img src="<?= $_SESSION['page']['home_url'] ?>img/baby-cart-medium.png" style="opacity:0.6" /></div>
@@ -58,6 +59,7 @@ $_SESSION['page']['home_url'] = '../../';
                             </div>
                         </div>
                     </a>
+                    <hr>
                     <a href="<?= $_SESSION['page']['home_url'] ?>account/graduation-registry/">
                         <div class="large-6 columns row" style="height:130px; margin-left:0; margin-top:20px; background:#88C4FF">
                             <div class="large-5 columns"><img src="<?= $_SESSION['page']['home_url'] ?>img/graduation-cap-medium.png" style="opacity:0.6" /></div>
@@ -66,6 +68,7 @@ $_SESSION['page']['home_url'] = '../../';
                             </div>
                         </div>
                     </a>
+                    <hr>
                     <a href="<?= $_SESSION['page']['home_url'] ?>account/birthday-registry/">
                         <div class="large-6 columns row" style="height:130px; margin-top:20px; background:#88C4FF; margin-left:10px">
                             <div class="large-5 columns"><img src="<?= $_SESSION['page']['home_url'] ?>img/birthday-medium.png" style="opacity:0.6" /></div>

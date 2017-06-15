@@ -83,7 +83,7 @@ if ($memberAccess) {
 ?>
             <!--Add to cart is temporarily disabled
                     <div class="large-6 columns row-fluid" id="shopping-cart">
-                      <div class="span5" title="Cart">
+                      <div class="large-5 columns" title="Cart">
                       <a href="<?= $_SESSION["page"]["home_url"] ?>shop/cart/" style="color:#FFFFFF">
                             <img src="<?= $_SESSION["page"]["home_url"] ?>img/shoping_cart-img.png" height="30" width="30" id="shopping-cart-img" />
                             (<span class="cart-count">
@@ -93,7 +93,7 @@ if ($memberAccess) {
                             </span>)
                             </a>
                       </div>
-                      <div class="span5" title="Registry">
+                      <div class="large-5 columns" title="Registry">
                       <a href="<?= $_SESSION["page"]["home_url"] ?>account/registry/manage/" style="color:#FFFFFF">
                             <img src="<?= $_SESSION["page"]["home_url"] ?>img/check_list-48.png" height="30" width="30" id="shopping-cart-img" />
                             (<span class="registry-count">
@@ -109,7 +109,7 @@ if ($memberAccess) {
         </div>
     </div>
 </div>
-<div style="width:100%; height:40px; z-index:50; position:absolute;" class="row appending-topnav visible-desktop">
+<div style="width:100%; height:40px; z-index:50; position:absolute; font-family: 'Raleway', serif;" class="row appending-topnav visible-desktop">
 
     <a href="<?= $_SESSION["page"]["home_url"] ?>wedding-registry/"><div class="large-3 columns" id="registryMenuWedding" style="width:20%">
             <img src="<?= $_SESSION["page"]["home_url"] ?>img/icons/wedding-rings.png"/>

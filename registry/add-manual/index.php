@@ -11,11 +11,14 @@ define('local_url', '../../');
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Add Items to the registry</title>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet">
         <!--fonts-->
         <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
         <!--font-awesome-->
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--foundation zurb-->
+<link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation.css' type="text/css">
+        <!--fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 <?php
 include(local_url . 'templates/script-tags.php');
 ?>
@@ -87,7 +90,7 @@ if (isset($_REQUEST['eid']) && isset($_REQUEST['reg'])) {
         <!--End top nav-->
         <div class="body-content account-page row" style="margin-top:5%">
             <div class="large-1 columns">&nbsp;</div>
-            <div class="span2 leftNavbar-container">
+            <div class="large-2 columns leftNavbar-container">
         <?php
         include(local_url . 'account/bin/left-navbar.php');
         ?>
@@ -192,7 +195,7 @@ if (isset($userData) && $registries == 0) {
     <?php echo $formData[7]; ?>
                                             </span>
                                         </div>
-                                        <!--<div class="span2 btn-warning" style="padding:10px 0;" align="center">
+                                        <!--<div class="large-2 columns btn-warning" style="padding:10px 0;" align="center">
                                           <span style="color:#FFF; font-weight:bold">
                                                 Cancel
                                           </span>

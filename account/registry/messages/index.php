@@ -18,7 +18,7 @@ $_SESSION['page']['home_url'] = '../../../';
 <!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Samedi: Registry Messages</title>
 <?php
 include($_SESSION['page']['home_url'].'templates/script-tags.php');

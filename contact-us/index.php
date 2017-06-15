@@ -6,9 +6,9 @@ define('local_url','../');
 
 ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html class="no-js" lang="en" dir="ltr">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Contact Us - Samedi Gift Registry</title>
 <?php
 include(local_url.'templates/script-tags.php');
@@ -20,7 +20,7 @@ include(local_url.'templates/script-tags.php');
 ?>
 <!--End top nav-->
 <div class="body-content account-page row-fluid">
-	<div class="span3">&nbsp;</div>
+	<div class="large-3 columns">&nbsp;</div>
 	<div class="innnerBodyContent large-6 columns row-fluid" style="margin-top:5%;">
 		<div class="" align="center" style="font-size:30px;">
         	Follow Us For Amazing Offers

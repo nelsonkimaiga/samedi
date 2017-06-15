@@ -9,14 +9,14 @@
 				Please Sign In or Create An Account to create a registry
 			</div><br>
 			<div class="row-fluid">
-				<div class="span3">
+				<div class="large-3 columns">
 					<a href="<?=$_SESSION["page"]["home_url"]?>account/login/">
 						<button class="btn btn-large btn-warning">
 							Sign In
 						</button>
 					</a>
 				</div>
-				<div class="span1">
+				<div class="large-1 columns">
 					Or
 				</div>
 				<div class="large-6 columns">

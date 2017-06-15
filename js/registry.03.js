@@ -36,7 +36,7 @@ var REGISTRYMOD = {
 	
 	itemMessages:function(itemCode,action){
 		if(action=='load_contacts'){
-			$('.item-contacts-'+itemCode).html('<div style="font-size:12px">fetching contacts...please wait</div><img src="../../../dev/ripple.gif" class="span4" />');
+			$('.item-contacts-'+itemCode).html('<div style="font-size:12px">fetching contacts...please wait</div><img src="../../../dev/ripple.gif" class="large-4 columns" />');
 			$.ajax({
 				   url:"bin/manage.changes.registry.php",
 				   data:{action:'fetch_contacts',itemCode:itemCode,registry:'wedding_registry'},

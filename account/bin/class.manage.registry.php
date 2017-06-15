@@ -95,16 +95,16 @@ private function createHTML(){
 
 		<div class="alert alert-info row-fluid" style="margin-left:0; margin-bottom:10px">
 			<a href="'.$_SESSION['page']['home_url'].$this->strRegistryLink.'">
-				<div class="span3">
+				<div class="large-3 columns">
 					'.$this->RegistryName.'
 				</div>
-				<div class="span3">
+				<div class="large-3 columns">
 					Started On: '.$this->RegistryDateStarted.'
 				</div>
-				<div class="span3">
+				<div class="large-3 columns">
 					Last Modified: '.$this->RegistryDateModified.'
 				</div>
-				<div class="span3">
+				<div class="large-3 columns">
 					Item(s) Selected:- '.$this->RegistryItems.'
 				</div>
 			</a>

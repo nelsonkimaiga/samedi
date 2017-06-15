@@ -49,7 +49,7 @@ return $str;
 //offers
 if($itemData['original_price']>$itemData['sale_price']){
 	$strSave = '
-			<div class="span5" style="margin-top:5px; font-family:Calibri; font-size:14px">
+			<div class="large-5 columns" style="margin-top:5px; font-family:Calibri; font-size:14px">
 				Was <span style="text-decoration:line-through">Ksh. '.$itemData['original_price'].'</span><br />
 				Save Ksh. '.substractCash($itemData['original_price'],$itemData['sale_price']).'
 			</div>
@@ -68,10 +68,10 @@ for($i = 1; $i<=$maxQuantity; $i++){
 $strTopNav = returnStrTOPNAV();
 
 $header = '
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>'.$itemData['abstract'].': Samed Gift Registry</title>
 '.$header_scripts.'
 </head>'; //end header
@@ -84,7 +84,7 @@ $strTopNav
 	<div class="large-12 columns lowerContent">
 		<div class="row-fluid">
 			<div class="large-12 columns row-fluid" style="height:150px; background:url(\'../../img/cloud-background.jpg\')">
-				<div class="span3"></div>
+				<div class="large-3 columns"></div>
 				<div class="large-6 columns account-registry-image" style="margin-top:60px">Start shopping, Save more, smile more<br /><br />
 				</div>
 			</div>
@@ -92,7 +92,7 @@ $strTopNav
 	</div><!--lowerContent-->
 	
 <div class="innnerBodyContent" style="margin-top:12%">
-		<div class="span1" style="width:auto">&nbsp;</div>
+		<div class="large-1 columns" style="width:auto">&nbsp;</div>
 		<div class="large-11 columns row-fluid item-shop-container" style="margin-left:2%">
 			<div class="large-12 columns row-fluid item-shop-main" style="padding-top:10px; padding-left:10px;">
 				<div class="large-12 columns page-links">
@@ -104,11 +104,11 @@ $strTopNav
 							<div class="item-title">'.$itemData['abstract'].'</div>
 							<div class="item-heading-sub">by <a href="javascript:void()">'.$itemData['manufacturer'].'</a></div>
 							<div class="row-fluid item-heading-sub" style="margin-left:0; margin-top:10px">
-								<div class="span2">
+								<div class="large-2 columns">
 									<img src="../../img/thumbs-up.png" />&nbsp;&nbsp;
 									'.$itemData['thumbs_up'].'
 								</div>
-								<div class="span2">
+								<div class="large-2 columns">
 									<img src="../../img/thumbs-down.png" />&nbsp;&nbsp;
 									'.$itemData['thumbs_down'].'
 								</div>
@@ -116,14 +116,14 @@ $strTopNav
 						</div>
 					</div>
 				</div><br />
-				<div class="span1">&nbsp;</div>
+				<div class="large-1 columns">&nbsp;</div>
 				<div class="large-6 columns row-fluid item-display" style="margin-left:0; margin-top:3%;">
 					<div class="item-image">
 						<img class="img-rounded" src="../../img/'.$itemData['image'].'" />
 					</div><br />
 				</div>
 				
-				<div class="span5 item-shop-container row-fluid" style="margin-top:3%; background:#F0F0FF;">
+				<div class="large-5 columns item-shop-container row-fluid" style="margin-top:3%; background:#F0F0FF;">
 					<div class="large-12 columns">
 						<div class="item-shop-price">
 						<sup>Ksh.</sup>'.$itemData['sale_price'].'<sup>00</sup>&nbsp;
@@ -133,14 +133,14 @@ $strTopNav
 						</div>
 					</div><br /><br />
 					<div class="large-12 columns row-fluid" style="margin-left:0; margin-top:5%">
-						<div class="span2">Quantity</div>
-						<div class="span4">
+						<div class="large-2 columns">Quantity</div>
+						<div class="large-4 columns">
 							<select class="input-small" name="selectQuantity" id="itemQuantity">
 								'.$strQuantity.'
 							</select>
 						</div>
-						<div class="span1">&nbsp;</div>
-						<div class="span5 add-to-cart" style=""><button class="btn btn-warning" style="padding:5px 35px">Add to Cart</button></div>
+						<div class="large-1 columns">&nbsp;</div>
+						<div class="large-5 columns add-to-cart" style=""><button class="btn btn-warning" style="padding:5px 35px">Add to Cart</button></div>
 					</div>
 					<div class="large-12 columns" style="margin-top:30px">
 						<div class="large-6 columns add-to-registry">

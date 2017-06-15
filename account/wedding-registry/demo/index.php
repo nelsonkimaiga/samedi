@@ -27,10 +27,10 @@ $editStage = "new";
 	 }
 	 
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Samedi: Registry</title>
 <?php
 include($_SESSION['page']['home_url'].'templates/script-tags.php');
@@ -109,8 +109,8 @@ $selectData = $FormData[4].'|'.$FormData[5].'|'.$FormData[6].'|'.$FormData[11];
 <input type="hidden" id="selectData" value="<?=$selectData?>" />
 
 <div class="body-content account-page row-fluid" style="margin-top:100px;">
-	<div class="span1">&nbsp;</div>
-	<div class="span3 leftNavbar-container" style="margin-top:30px;">
+	<div class="large-1 columns">&nbsp;</div>
+	<div class="large-3 columns leftNavbar-container" style="margin-top:30px;">
 		<?php
 		include($_SESSION['page']['home_url'].'account/bin/left-navbar.php');
 		?>
@@ -120,7 +120,7 @@ $selectData = $FormData[4].'|'.$FormData[5].'|'.$FormData[6].'|'.$FormData[11];
 		<br />
 		<div class="row-fluid">
 			<div class="large-12 columns row-fluid" style="height:130px; background:url('../../img/cloud-background.jpg')">
-				<div class="span3"><img src="<?=$_SESSION['page']['home_url']?>img/wedding-rings-medium.png" style="opacity:0.6" /></div>
+				<div class="large-3 columns"><img src="<?=$_SESSION['page']['home_url']?>img/wedding-rings-medium.png" style="opacity:0.6" /></div>
 				<div class="large-6 columns account-registry-image" style="margin-top:30px">Wedding Registry<br /><br />
 					<div style="color:#ffffff; font-style:italic; font-size:18px">Your gift for my special day</div>
 				</div>
@@ -135,9 +135,9 @@ $selectData = $FormData[4].'|'.$FormData[5].'|'.$FormData[6].'|'.$FormData[11];
 			unset($_SESSION['registry']['temp_detail_edit']);
 		?>
 			<form id="frmRegistry" method="post" enctype="multipart/form-data" action="<?=$FormSubmitTo?>">
-				<div class="span4"><h3>Wedding details</h3></div><br />
+				<div class="large-4 columns"><h3>Wedding details</h3></div><br />
 				<div class="large-12 columns row-fluid">
-					<div class="span4 row-fluid" style="padding-left:20px">
+					<div class="large-4 columns row-fluid" style="padding-left:20px">
 						<div class="large-10 columns inner-heading">Bride</div><br /><br />
 						<div class="control-group" id="inputBrideFNameGroup">
 							<label class="control-label" for="inputBrideFName">First Name</label>
@@ -153,11 +153,11 @@ $selectData = $FormData[4].'|'.$FormData[5].'|'.$FormData[6].'|'.$FormData[11];
 						</div>
 					</div>
 					
-					<div class="span2">
+					<div class="large-2 columns">
 						<img src="<?=$_SESSION['page']['home_url']?>img/and-medium.png" style="opacity:0.6" />
 					</div>
 					
-					<div class="span4 row-fluid" style="padding-left:20px;">
+					<div class="large-4 columns row-fluid" style="padding-left:20px;">
 						<div class="large-10 columns inner-heading">Groom</div><br /><br />
 						<div class="control-group" id="inputGroomFNameGroup">
 							<label class="control-label" for="inputGroomFName">First Name</label>
@@ -177,8 +177,8 @@ $selectData = $FormData[4].'|'.$FormData[5].'|'.$FormData[6].'|'.$FormData[11];
 				</div>
 
 				<div class="large-12 columns row-fluid dateContainer" style="margin-top:3%">
-					<div class="span2"><img src="<?=$_SESSION['page']['home_url']?>img/calendar-64.png" /></div>
-					<div class="span3">
+					<div class="large-2 columns"><img src="<?=$_SESSION['page']['home_url']?>img/calendar-64.png" /></div>
+					<div class="large-3 columns">
 						<div>Day
 							<?php echo(($FormData[4]!='')?'<div class="inline-heading">('.$FormData[4].')</div>':'') ?>
 						</div><br />
@@ -186,7 +186,7 @@ $selectData = $FormData[4].'|'.$FormData[5].'|'.$FormData[6].'|'.$FormData[11];
 							<option selected="selected">Select Month</option>
 						</select>
 					</div>
-					<div class="span4">
+					<div class="large-4 columns">
 						<div>Month
 							<?php echo(($FormData[5]!='')?'<div class="inline-heading">('.$FormData[5].')</div>':'') ?>
 						</div><br />
@@ -206,7 +206,7 @@ $selectData = $FormData[4].'|'.$FormData[5].'|'.$FormData[6].'|'.$FormData[11];
 							<option value="December">December</option>
 						</select>
 					</div>
-					<div class="span3">
+					<div class="large-3 columns">
 						<div>Year 
 							<?php echo(($FormData[6]!='')?'<div class="inline-heading">('.$FormData[6].')</div>':'') ?>
 						</div><br />
@@ -216,12 +216,12 @@ $selectData = $FormData[4].'|'.$FormData[5].'|'.$FormData[6].'|'.$FormData[11];
 							<option value="2017">2017</option>
 						</select>
 					</div>
-					<div  class="span3"></div>
+					<div  class="large-3 columns"></div>
 					<div  class="large-7 columns dateError" id="dateError"></div>
 				</div><br /><!--dateContainer-->
 				
 				<div class="large-9 columns row-fluid photoContainer" style="margin-top:5%">
-					<div class="span2">
+					<div class="large-2 columns">
 						<img src="<?=$_SESSION['page']['home_url']?>img/image-icon-64.png" />
 					</div>
 					<div class="large-9 columns">
@@ -269,17 +269,17 @@ $selectData = $FormData[4].'|'.$FormData[5].'|'.$FormData[6].'|'.$FormData[11];
 				</div><br /><!--photoContainer-->
 
 				<div class="large-11 columns row-fluid otherDetailsContainer" style="margin-top:5%;">
-					<div class="span2 inner-heading">Other details</div>
+					<div class="large-2 columns inner-heading">Other details</div>
 					<div class="large-10 columns row-fluid">
 						<div class="control-group" id="weddingLocationGroup">
-							<label class="control-label span4" for="weddingLocation">Wedding Location</label>
+							<label class="control-label large-4 columns" for="weddingLocation">Wedding Location</label>
 							<div class="controls">
 								<input type="text" id="weddingLocation" name="weddingLocation" placeholder="Wedding Location" value="<?=$FormData[8]?>">
 							</div>
 						</div>
 
 						<div class="control-group" id="receptionLocationGroup">
-							<label class="control-label span4" for="receptionLocation">Reception Location</label>
+							<label class="control-label large-4 columns" for="receptionLocation">Reception Location</label>
 							<div class="controls">
 								<input type="text" id="receptionLocation" name="receptionLocation" placeholder="Reception Location" value="<?=$FormData[9]?>">
 								<span class="help-inline">(Optional)</span>
@@ -287,7 +287,7 @@ $selectData = $FormData[4].'|'.$FormData[5].'|'.$FormData[6].'|'.$FormData[11];
 						</div>
 
 						<div class="control-group" id="eveningPartyGroup">
-							<label class="control-label span4" for="eveningParty">Evening Party Location</label>
+							<label class="control-label large-4 columns" for="eveningParty">Evening Party Location</label>
 							<div class="controls">
 								<input type="text" id="eveningParty" name="eveningParty" placeholder="Bridal Party - Optional" value="<?=$FormData[10]?>"><br />
 								(Bridal Party - Optional)
@@ -298,7 +298,7 @@ $selectData = $FormData[4].'|'.$FormData[5].'|'.$FormData[6].'|'.$FormData[11];
 				</div><br /><!--otherDetailsContainer-->
 				
 				<div class="large-11 columns row-fluid weddingStatusContainer" style="margin-top:5%;">
-					<div class="span2 inner-heading">Wedding Status</div>
+					<div class="large-2 columns inner-heading">Wedding Status</div>
 					<div class="large-9 columns row-fluid">
 						<div class="">
 							<select class="selectWeddingStatus input-medium" id="selectWeddingStatus" name="selectWeddingStatus">
@@ -321,7 +321,7 @@ $selectData = $FormData[4].'|'.$FormData[5].'|'.$FormData[6].'|'.$FormData[11];
 					<?php
 						if($editStage=="new"){
 					?>
-					<div class="span5">
+					<div class="large-5 columns">
 						<button type="button" class="btn btn-primary btn-large" onclick="javascript:registry.verifyDate()">
 							Save Details
 						</button>
@@ -329,11 +329,11 @@ $selectData = $FormData[4].'|'.$FormData[5].'|'.$FormData[6].'|'.$FormData[11];
 					<?php
 						}else{
 					?>
-					<div class="span5">
+					<div class="large-5 columns">
 						<button type="button" class="btn btn-primary btn-large" onclick="javascript:registry.verifyDate()">Save Changes</button>
 					</div>
 					<?php } ?>
-					<div class="span3">
+					<div class="large-3 columns">
 						<button type="button" class="btn btn-inverse btn-large">Cancel</button>
 					</div>
 				</div><!--saveElement--><br />
@@ -351,7 +351,7 @@ $selectData = $FormData[4].'|'.$FormData[5].'|'.$FormData[6].'|'.$FormData[11];
 </div><br /><!--end bodycontent-->
 
 <div class="footer-container-end">
-	<div class="span1" style="width:1%">
+	<div class="large-1 columns" style="width:1%">
 		&nbsp;
 	</div>
 	&copy;&nbsp;&nbsp;Samedi Registry Co.&nbsp;

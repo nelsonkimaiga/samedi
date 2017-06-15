@@ -90,10 +90,10 @@ private function appendToContainer($row){
 		$imageURL = $row['image'];
 	}
 	$this->strDivHTML .=	$strDivHead.
-				'<div class="span5 row-fluid">
+				'<div class="large-5 columns row-fluid">
 					<img class="large-6 columns" src="'.$_SESSION['page']['home_url'].'img/registry/'.$this->activeRegistry.'/'.$imageURL.'" /><br />
 				</div>
-				<div class="span5" style="margin-left:-10%">
+				<div class="large-5 columns" style="margin-left:-10%">
 					<div style="background:#0078B3; opacity:0.7; color:#FFF; padding:10px">
 						'.$row['giftName'].'&nbsp;('.$row['giftCode'].')
 					</div><br />
@@ -107,7 +107,7 @@ private function appendToContainer($row){
 					</div>
 					
 				</div>
-					<div class="span2">
+					<div class="large-2 columns">
 						<div><button class="btn btn-info btn-mini" onclick="MANAGE_REGISTRY.editItem('.$itemId.',\''.$this->activeRegistry.'\')">Edit item</button></div><br />
 						<div><button class="btn btn-warning btn-mini" onclick="javascript:MANAGE_REGISTRY.deleteItem('.$itemId.',\''.$this->activeRegistry.'\')">Remove item</button></div><br />
 					</div>

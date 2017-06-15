@@ -22,10 +22,10 @@ if(isset($_REQUEST['regid']) && isset($_REQUEST['itemCode'])){
 }
 
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Samedi: Registry</title>
 <?php
 include(local_url.'templates/script-tags.php');
@@ -49,9 +49,9 @@ include(local_url.'templates/script-tags.php');
 	</div><!--lowerContent-->
 	
 	<div class="innnerBodyContent" style="">
-		<div class="span1" style="width:auto">&nbsp;</div>
+		<div class="large-1 columns" style="width:auto">&nbsp;</div>
 		<div class="large-11 columns row-fluid item-shop-container" style="margin-left:0.5%">
-			<div class="span1 row-fluid">
+			<div class="large-1 columns row-fluid">
 				
 			</div>
 			
@@ -59,12 +59,12 @@ include(local_url.'templates/script-tags.php');
 				
 				<div class="large-10 columns row-fluid" style="height:100px; width:100%; border:solid thin #000000; margin-left:0; padding:10px; background:url('../../../img/couple-banner.jpg'); background-size:cover">
 					<div class="large-12 columns row-fluid">
-						<div class="span1">&nbsp;</div>
-						<div class="span3" style="font-size:40px; font-weight:bold; font-family: 'Playball', cursive; padding-top:20px; text-align:right">
+						<div class="large-1 columns">&nbsp;</div>
+						<div class="large-3 columns" style="font-size:40px; font-weight:bold; font-family: 'Playball', cursive; padding-top:20px; text-align:right">
 							<?php echo($invitation->brideInfo); ?>
 						</div>
-						<div class="span1"><img src="<?=$_SESSION['page']['home_url']?>img/and-medium.png" style="opacity:0.6" /></div>
-						<div class="span3" style="font-size:40px; font-weight:bold; font-family: 'Tangerine', cursive; padding-top:20px">
+						<div class="large-1 columns"><img src="<?=$_SESSION['page']['home_url']?>img/and-medium.png" style="opacity:0.6" /></div>
+						<div class="large-3 columns" style="font-size:40px; font-weight:bold; font-family: 'Tangerine', cursive; padding-top:20px">
 							<?php echo($invitation->groomInfo); ?>
 						</div>
 					 </div>
@@ -79,7 +79,7 @@ include(local_url.'templates/script-tags.php');
 					
 					<!--item display -->
 					<div class="row-fluid item-div-container container-white" style="padding:5px">
-						<div class="span5">
+						<div class="large-5 columns">
 							<img class="" src="<?=$_SESSION['page']['home_url']?>img/<?=$arrProducts['image']?>" /><br /><br />
 						</div>
 						<div class="large-6 columns row-fluid">						
@@ -87,16 +87,16 @@ include(local_url.'templates/script-tags.php');
 								<a href="<?=local_url.'shop/'.$arrProducts['url']?>"><?php echo($arrProducts['abstract']); ?></a>
 							</div>
 							<div class="large-12 columns item-quantity row-fluid" style="font-size:20px; font-weight:bold">
-								<div class="span3">Price</div>
+								<div class="large-3 columns">Price</div>
 								<div class="large-7 columns">
 									<sup>Ksh.</sup><span class="item-price-itemCode price-per"><?php echo($arrProducts['price']); ?></span><sup>00</sup>&nbsp;
 									<span style="font-size:14px; color:#666666;">(From Ksh. <?php echo($arrProducts['org_price']); ?>)</span>
 								</div>
 							</div>
 							<div class="large-12 columns item-quantity row-fluid" style="font-size:16px; font-weight:bold">
-								<div class="span3">Quantity</div>
-								<div class="span5">
-									<select class="span5" onchange="javascript:product.processPriceAtCheckOut(this.value)">
+								<div class="large-3 columns">Quantity</div>
+								<div class="large-5 columns">
+									<select class="large-5 columns" onchange="javascript:product.processPriceAtCheckOut(this.value)">
 									<?php
 										for($i=1; $i<=$quantity; $i++){
 											echo('<option>'.$i.'</option>');
@@ -106,13 +106,13 @@ include(local_url.'templates/script-tags.php');
 								</div>
 							</div>
 							<div class="large-12 columns item-quantity row-fluid" style="font-size:20px; font-weight:bold">
-								<div class="span3">=</div>
-								<div class="span5">
+								<div class="large-3 columns">=</div>
+								<div class="large-5 columns">
 									<sup>Ksh.</sup>&nbsp;<span class="item-price-itemCode total-price">23,400</span>&nbsp;<sup>00</sup>&nbsp;
 								</div>
 							</div>
 							<div class="large-12 columns row-fluid" style="font-size:20px; font-weight:bold">
-								<div class="span3">&nbsp;</div>
+								<div class="large-3 columns">&nbsp;</div>
 								<div class="large-8 columns">
 									<label>
 										<input type="checkbox" name="giftCard"/>&nbsp;Include Gift Card and Gift Wrapping
@@ -120,7 +120,7 @@ include(local_url.'templates/script-tags.php');
 								</div>
 							</div>
 							<div class="large-12 columns row-fluid" style="font-size:14; border-top:solid 2px #CCCCCC">
-								<div class="span3"><strong>Delivery</strong></div>
+								<div class="large-3 columns"><strong>Delivery</strong></div>
 								<div class="large-8 columns row-fluid" style="margin-top:2%">
 									<label class="large-11 columns">
 										<input type="radio" name="deliveryOptions" value="1" checked="checked"/>&nbsp;Deliver to my location
@@ -164,7 +164,7 @@ include(local_url.'templates/script-tags.php');
 	  ?>
         <p>
 			Thank You for your vote. Please write us a review<br /><br />
-			<textarea id="review" rows="4" placeholder="Write your review ..." class="span4"></textarea>
+			<textarea id="review" rows="4" placeholder="Write your review ..." class="large-4 columns"></textarea>
 		</p>
       </div>
       <div class="modal-footer">

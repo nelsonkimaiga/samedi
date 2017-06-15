@@ -29,18 +29,23 @@ function splitEntry($str, $split, $char) {
 }
 ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html class="no-js" lang="en" dir="ltr">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Samedi: Registry</title>
         <?php
         include($_SESSION['page']['home_url'] . 'templates/script-tags.php');
         ?>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+        <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet"-->-->
+
             <!--fonts-->
             <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
                 <!--font-awesome-->
-                <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--foundation zurb-->
+<link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation.css' type="text/css">
+        <!--fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
                     <script type="text/javascript" src="<?= $_SESSION['page']['home_url'] ?>js/registry.01.js"></script>
                     </head>
 
@@ -112,12 +117,12 @@ function splitEntry($str, $split, $char) {
                         <input type="hidden" id="selectData" value="<?= $selectData ?>" />
 
                         <div class="body-content account-page row-fluid" style="margin-top:100px;">
-                            <div class="span2">&nbsp;</div>	
+                            <div class="large-2 columns">&nbsp;</div>	
                             <div class="large-9 columns lowerContent">
                                 <br />
                                 <div class="row-fluid">
                                     <div class="large-12 columns row-fluid" style="height:130px; background:#88C4FF">
-                                        <div class="span3"><img src="<?= $_SESSION['page']['home_url'] ?>img/baby-cart-medium.png" style="opacity:0.6" /></div>
+                                        <div class="large-3 columns"><img src="<?= $_SESSION['page']['home_url'] ?>img/baby-cart-medium.png" style="opacity:0.6" /></div>
                                         <div class="large-6 columns account-registry-image" style="margin-top:30px">Baby Shower Registry<br /><br />
                                             <span style="font-size:15px; font-style:italic">Babies are always more trouble than you thought, and always more wonderful - Charles Osgood</span>
                                         </div>
@@ -133,7 +138,7 @@ function splitEntry($str, $split, $char) {
                                     ?>
                                     <form id="frmRegistry" method="post" enctype="multipart/form-data" action="<?= $FormSubmitTo ?>">
                                         <div class="large-12 columns row-fluid">
-                                            <div class="span4 row-fluid" style="padding-left:20px">
+                                            <div class="large-4 columns row-fluid" style="padding-left:20px">
                                                 <div class="control-group" id="inputFNameGroup">
                                                     <label class="control-label" for="inputFName">First Name</label>
                                                     <div class="controls">
@@ -148,7 +153,7 @@ function splitEntry($str, $split, $char) {
                                                 </div>
                                             </div>
 
-                                            <div class="span4" id="addPartner-cont" style="margin-left:5%">
+                                            <div class="large-4 columns" id="addPartner-cont" style="margin-left:5%">
                                                 <div class="control-group" id="inputFNameGroup_add">
                                                     <label class="control-label" for="inputFpartner">Partner&apos;s First Name (Optional)</label>
                                                     <div class="controls">
@@ -166,8 +171,8 @@ function splitEntry($str, $split, $char) {
                                         </div>
 
                                         <div class="large-12 columns row-fluid dateContainer" style="margin-top:3%">
-                                            <div class="span2"><img src="<?= $_SESSION['page']['home_url'] ?>img/calendar-64.png" /></div>
-                                            <div class="span3">
+                                            <div class="large-2 columns"><img src="<?= $_SESSION['page']['home_url'] ?>img/calendar-64.png" /></div>
+                                            <div class="large-3 columns">
                                                 <div>Day
                                                     <?php echo(($FormData[4] != '') ? '<div class="inline-heading">(' . $FormData[4] . ')</div>' : '') ?>
                                                 </div><br />
@@ -175,7 +180,7 @@ function splitEntry($str, $split, $char) {
                                                     <option selected="selected">Select Month</option>
                                                 </select>
                                             </div>
-                                            <div class="span4">
+                                            <div class="large-4 columns">
                                                 <div>Month
                                                     <?php echo(($FormData[5] != '') ? '<div class="inline-heading">(' . $FormData[5] . ')</div>' : '') ?>
                                                 </div><br />
@@ -195,7 +200,7 @@ function splitEntry($str, $split, $char) {
                                                     <option value="December">December</option>
                                                 </select>
                                             </div>
-                                            <div class="span3">
+                                            <div class="large-3 columns">
                                                 <div>Year 
                                                     <?php echo(($FormData[6] != '') ? '<div class="inline-heading">(' . $FormData[6] . ')</div>' : '') ?>
                                                 </div><br />
@@ -205,12 +210,12 @@ function splitEntry($str, $split, $char) {
                                                     <option value="2019">2019</option>
                                                 </select>
                                             </div>
-                                            <div  class="span3"></div>
+                                            <div  class="large-3 columns"></div>
                                             <div  class="large-7 columns dateError" id="dateError"></div>
                                         </div><br /><!--dateContainer-->
 
                                         <div class="large-12 columns row-fluid photoContainer" style="margin-top:5%">
-                                            <div class="span2">
+                                            <div class="large-2 columns">
                                                 <img src="<?= $_SESSION['page']['home_url'] ?>img/image-icon-64.png" />
                                             </div>
                                             <div class="large-9 columns">
@@ -258,12 +263,12 @@ function splitEntry($str, $split, $char) {
                                         </div><br /><!--photoContainer-->
 
                                         <div class="large-12 columns row-fluid otherDetailsContainer" style="margin-top:6%;">
-                                            <div class="span2">
+                                            <div class="large-2 columns">
                                                 <img src="<?= $_SESSION['page']['home_url'] ?>img/Location-64.png" />
                                             </div>
                                             <div class="large-9 columns row-fluid">
                                                 <div class="control-group" id="babyshowerLocationGroup">
-                                                    <label class="control-label span4" for="babyshowerLocation">Baby shower Location</label>
+                                                    <label class="control-label large-4 columns" for="babyshowerLocation">Baby shower Location</label>
                                                     <div class="controls">
                                                         <input type="text" id="babyshowerLocation" name="babyshowerLocation" placeholder="Baby Shower Location" value="<?= $FormData[8] ?>">
                                                     </div>
@@ -272,10 +277,10 @@ function splitEntry($str, $split, $char) {
                                         </div><br /><!--otherDetailsContainer-->
 
                                         <div class="large-12 columns row-fluid babyshowerStatusContainer" style="margin-top:5%;">
-                                            <div class="span2">
+                                            <div class="large-2 columns">
                                                 <img src="<?= $_SESSION['page']['home_url'] ?>img/account-locked.png" />
                                             </div>
-                                            <div class="span3">Baby shower Status</div>
+                                            <div class="large-3 columns">Baby shower Status</div>
                                             <div class="large-7 columns row-fluid">
                                                 <div class="">
                                                     <select class="selectbabyshowerStatus input-medium" id="selectbabyshowerStatus" name="selectbabyshowerStatus">
@@ -298,7 +303,7 @@ function splitEntry($str, $split, $char) {
                                             <?php
                                             if ($editStage == "new") {
                                                 ?>
-                                                <div class="span5">
+                                                <div class="large-5 columns">
                                                     <button type="button" class="btn btn-primary btn-large" onclick="javascript:registry.verifyDate('babyshowerData')">
                                                         Save Details
                                                     </button>
@@ -306,11 +311,11 @@ function splitEntry($str, $split, $char) {
                                                 <?php
                                             } else {
                                                 ?>
-                                                <div class="span5">
+                                                <div class="large-5 columns">
                                                     <button type="button" class="btn btn-primary btn-large" onclick="javascript:registry.verifyDate('babyshowerData')">Save Changes</button>
                                                 </div>
                                             <?php } ?>
-                                            <div class="span3">
+                                            <div class="large-3 columns">
                                                 <button type="button" class="btn btn-inverse btn-large">Cancel</button>
                                             </div>
                                         </div><!--saveElement--><br />
@@ -321,7 +326,7 @@ function splitEntry($str, $split, $char) {
                         </div><br /><!--end bodycontent-->
 
                         <div class="footer-container-end">
-                            <div class="span1" style="width:1%">
+                            <div class="large-1 columns" style="width:1%">
                                 &nbsp;
                             </div>
                             &copy;&nbsp;&nbsp;Samedi Registry Co.&nbsp;

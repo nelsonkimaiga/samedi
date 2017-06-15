@@ -29,9 +29,9 @@ function splitEntry($str, $split, $char) {
 }
 ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html class="no-js" lang="en" dir="ltr">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Samedi: Registry</title>
         <?php
         include($_SESSION['page']['home_url'] . 'templates/script-tags.php');
@@ -41,7 +41,11 @@ function splitEntry($str, $split, $char) {
         <!--fonts-->
         <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
         <!--font-awesome-->
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--foundation zurb-->
+<link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation.css' type="text/css">
+        <!--fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
         <script type="text/javascript" src="<?= $_SESSION['page']['home_url'] ?>js/registry.01.js"></script>
     </head>
 
@@ -353,7 +357,7 @@ if ($editStage == "new") {
 
         </div><br /><!--end bodycontent-->
         <div class="footer-container-end">
-            <div class="span1" style="width:1%">
+            <div class="large-1 columns" style="width:1%">
                 &nbsp;
             </div>
             &copy;&nbsp;&nbsp;Samedi Gift Registry Co.&nbsp;

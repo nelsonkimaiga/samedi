@@ -85,7 +85,7 @@ private function strPublicRegEntries($userId){
 			$userURL = explode('/',$userId);
 			$userIdFormat = str_replace('/','.',$userId);
 			$strToDiv = '
-				<a href="../view-registry/?regid='.$userURL[1].'&regid_b='.md5($userId).'" class="span3">
+				<a href="../view-registry/?regid='.$userURL[1].'&regid_b='.md5($userId).'" class="large-3 columns">
 				<div class="" style="border-right:solid 2px #000000">
 					<div class="regNames" style="padding:2%; background:#E6E6E6; border-bottom:solid 2px #999999; font-size:18px; font-weight:bold">
 						<div style="float:left">
@@ -227,23 +227,23 @@ private function setHTMLContainer($details,$quantity,$itemCode){
 			';
 	}
 	$strHTML = $contHeading.'
-						<div class="span3">
+						<div class="large-3 columns">
 							<img class="" src="'.$_SESSION['page']['home_url'].'img/'.$details['image'].'" /><br /><br />
 						</div>
-						<div class="span3 item-abstract" style="font-size:16px">
+						<div class="large-3 columns item-abstract" style="font-size:16px">
 							<a href="'.$_SESSION['page']['home_url'].'shop/'.$details['page_url'].'">'.$details['abstract'].'</a>
 						</div>
-						<div class="span2 item-quantity" style="font-size:16px">
+						<div class="large-2 columns item-quantity" style="font-size:16px">
 							<h4>Quantity</h4>
 							<h5>Items Bought : '.$quantityPurchased.'<br /><br />
 							Items Remaining: '.($quantity - $quantityPurchased).'</h5>
 						</div>
-						<div class="span1 item-quantity" style="font-size:20px; font-weight:bold">
+						<div class="large-1 columns item-quantity" style="font-size:20px; font-weight:bold">
 							<h4>Price @</h4>
 							<sup>Ksh.</sup><span class="item-price-itemCode">'.$details['sale_price'].'</span><sup>00</sup>&nbsp;
 						</div>
-						<div class="span1">&nbsp;</div>
-						<div class="span2 item-buttons">
+						<div class="large-1 columns">&nbsp;</div>
+						<div class="large-2 columns item-buttons">
 							'.$strBtnHTML.'
 						</div>
 					</div>
